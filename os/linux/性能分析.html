@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>性能分析 | 大兵个人主页</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.74761522.css" as="style"><link rel="preload" href="/assets/js/app.a83ba246.js" as="script"><link rel="preload" href="/assets/js/2.310a7e4d.js" as="script"><link rel="preload" href="/assets/js/57.6beeb238.js" as="script"><link rel="prefetch" href="/assets/js/10.cfd03c3c.js"><link rel="prefetch" href="/assets/js/11.d538ab41.js"><link rel="prefetch" href="/assets/js/12.2ca9bba5.js"><link rel="prefetch" href="/assets/js/13.9875ee83.js"><link rel="prefetch" href="/assets/js/14.9ebc5f17.js"><link rel="prefetch" href="/assets/js/15.03eee70a.js"><link rel="prefetch" href="/assets/js/16.0c4de382.js"><link rel="prefetch" href="/assets/js/17.b86e6c5d.js"><link rel="prefetch" href="/assets/js/18.51994cc9.js"><link rel="prefetch" href="/assets/js/19.fd836ee3.js"><link rel="prefetch" href="/assets/js/20.468611f5.js"><link rel="prefetch" href="/assets/js/21.f9b047a8.js"><link rel="prefetch" href="/assets/js/22.1918b17a.js"><link rel="prefetch" href="/assets/js/23.13925cc8.js"><link rel="prefetch" href="/assets/js/24.56eed29a.js"><link rel="prefetch" href="/assets/js/25.6300438d.js"><link rel="prefetch" href="/assets/js/26.2a48afcd.js"><link rel="prefetch" href="/assets/js/27.19c4476c.js"><link rel="prefetch" href="/assets/js/28.d27c63ce.js"><link rel="prefetch" href="/assets/js/29.6ba9bfcb.js"><link rel="prefetch" href="/assets/js/3.9252498e.js"><link rel="prefetch" href="/assets/js/30.237ed709.js"><link rel="prefetch" href="/assets/js/31.c82179fc.js"><link rel="prefetch" href="/assets/js/32.04a6da1e.js"><link rel="prefetch" href="/assets/js/33.4ec1b165.js"><link rel="prefetch" href="/assets/js/34.27e08e63.js"><link rel="prefetch" href="/assets/js/35.203c5892.js"><link rel="prefetch" href="/assets/js/36.ebbb33e9.js"><link rel="prefetch" href="/assets/js/37.9242a1a1.js"><link rel="prefetch" href="/assets/js/38.01fa380e.js"><link rel="prefetch" href="/assets/js/39.1d399562.js"><link rel="prefetch" href="/assets/js/4.c7abab7a.js"><link rel="prefetch" href="/assets/js/40.2b25dce1.js"><link rel="prefetch" href="/assets/js/41.5b212c48.js"><link rel="prefetch" href="/assets/js/42.97c44ff3.js"><link rel="prefetch" href="/assets/js/43.a8035fac.js"><link rel="prefetch" href="/assets/js/44.fec432ed.js"><link rel="prefetch" href="/assets/js/45.f5d5a885.js"><link rel="prefetch" href="/assets/js/46.a0087450.js"><link rel="prefetch" href="/assets/js/47.65573ade.js"><link rel="prefetch" href="/assets/js/48.45562f7d.js"><link rel="prefetch" href="/assets/js/49.68ed32ba.js"><link rel="prefetch" href="/assets/js/5.c308001f.js"><link rel="prefetch" href="/assets/js/50.050a8ad2.js"><link rel="prefetch" href="/assets/js/51.3b95e3bc.js"><link rel="prefetch" href="/assets/js/52.c52cbf76.js"><link rel="prefetch" href="/assets/js/53.d74df204.js"><link rel="prefetch" href="/assets/js/54.e4b594fc.js"><link rel="prefetch" href="/assets/js/55.0633e4a5.js"><link rel="prefetch" href="/assets/js/56.3a1b0668.js"><link rel="prefetch" href="/assets/js/58.eee4b6c5.js"><link rel="prefetch" href="/assets/js/59.fa083258.js"><link rel="prefetch" href="/assets/js/6.afd64bd9.js"><link rel="prefetch" href="/assets/js/60.dc8aa99b.js"><link rel="prefetch" href="/assets/js/61.b7cc6627.js"><link rel="prefetch" href="/assets/js/62.68f3f3cf.js"><link rel="prefetch" href="/assets/js/63.41e8a18b.js"><link rel="prefetch" href="/assets/js/64.98753395.js"><link rel="prefetch" href="/assets/js/65.955fc993.js"><link rel="prefetch" href="/assets/js/66.1d710889.js"><link rel="prefetch" href="/assets/js/67.cfc5574f.js"><link rel="prefetch" href="/assets/js/68.ac1869ab.js"><link rel="prefetch" href="/assets/js/69.9a3c1dfb.js"><link rel="prefetch" href="/assets/js/7.d9613933.js"><link rel="prefetch" href="/assets/js/70.9eeb9101.js"><link rel="prefetch" href="/assets/js/71.f3e6ef89.js"><link rel="prefetch" href="/assets/js/72.d68f6c69.js"><link rel="prefetch" href="/assets/js/73.b31cf8ba.js"><link rel="prefetch" href="/assets/js/74.5dace3cd.js"><link rel="prefetch" href="/assets/js/75.eaae314f.js"><link rel="prefetch" href="/assets/js/76.305b01e4.js"><link rel="prefetch" href="/assets/js/77.5b99980b.js"><link rel="prefetch" href="/assets/js/78.d153364e.js"><link rel="prefetch" href="/assets/js/79.943d0f34.js"><link rel="prefetch" href="/assets/js/8.da20b552.js"><link rel="prefetch" href="/assets/js/80.9f67c4e5.js"><link rel="prefetch" href="/assets/js/81.3aee741e.js"><link rel="prefetch" href="/assets/js/82.d3fb63a9.js"><link rel="prefetch" href="/assets/js/83.e250a07b.js"><link rel="prefetch" href="/assets/js/84.65ad65e2.js"><link rel="prefetch" href="/assets/js/85.39ff77a7.js"><link rel="prefetch" href="/assets/js/86.5591e4c0.js"><link rel="prefetch" href="/assets/js/87.c329518c.js"><link rel="prefetch" href="/assets/js/88.4b299058.js"><link rel="prefetch" href="/assets/js/89.fede7ba9.js"><link rel="prefetch" href="/assets/js/9.9c1c49f2.js"><link rel="prefetch" href="/assets/js/90.03a57adf.js"><link rel="prefetch" href="/assets/js/91.10fc4e31.js"><link rel="prefetch" href="/assets/js/92.cfa9759f.js"><link rel="prefetch" href="/assets/js/93.c3cf9ca0.js"><link rel="prefetch" href="/assets/js/94.06e12947.js"><link rel="prefetch" href="/assets/js/95.8b028666.js"><link rel="prefetch" href="/assets/js/96.2c946670.js"><link rel="prefetch" href="/assets/js/97.383021d2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.74761522.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大兵个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/front/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/k8s/" class="nav-link">
+  k8s相关
+</a></div><div class="nav-item"><a href="/os/" class="nav-link router-link-active">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/front/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/k8s/" class="nav-link">
+  k8s相关
+</a></div><div class="nav-item"><a href="/os/" class="nav-link router-link-active">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>系统相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/" aria-current="page" class="sidebar-link">系统相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>linux</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/linux/" aria-current="page" class="sidebar-link">linux</a></li><li><a href="/os/linux/Linux基本命令.html" class="sidebar-link">常用命令</a></li><li><a href="/os/linux/Ubuntu.html" class="sidebar-link">Ubuntu相关</a></li><li><a href="/os/linux/Vim 命令、操作、快捷键.html" class="sidebar-link">vim 常用</a></li><li><a href="/os/linux/base64.html" class="sidebar-link">BASE64操作</a></li><li><a href="/os/linux/centos.html" class="sidebar-link">Centos相关</a></li><li><a href="/os/linux/性能分析.html" class="active sidebar-link">性能分析</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/os/linux/日志分析.html" class="sidebar-link">日志分析</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Mac</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/mac/" class="sidebar-link">Mac</a></li><li><a href="/os/mac/Homebrew.html" class="sidebar-link">Homebrew相关</a></li><li><a href="/os/mac/zsh.html" class="sidebar-link">zsh配置</a></li><li><a href="/os/mac/环境搭建.html" class="sidebar-link">各种环境</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Windows</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/os/windows/" class="sidebar-link">Windows</a></li><li><a href="/os/windows/base64.html" class="sidebar-link">base64 操作</a></li><li><a href="/os/windows/winServer.html" class="sidebar-link">制作win服务</a></li><li><a href="/os/windows/wsl.html" class="sidebar-link">wsl</a></li><li><a href="/os/windows/乱七八糟.html" class="sidebar-link">乱七八糟</a></li><li><a href="/os/windows/删除服务.html" class="sidebar-link">删除服务</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="内存瓶颈"><a href="#内存瓶颈" class="header-anchor">#</a> <strong>内存瓶颈</strong></h3> <h4 id="free"><a href="#free" class="header-anchor">#</a> free</h4> <p><code>free</code>是查看内存使用情况，包括物理内存、交换内存(swap)和内核缓冲区内存。</p> <div class="language-shell extra-class"><pre class="language-shell"><code>-b <span class="token comment"># 以Byte为单位显示内存使用情况；</span>
+-k <span class="token comment"># 以KB为单位显示内存使用情况；</span>
+-m <span class="token comment"># 以MB为单位显示内存使用情况；</span>
+-g <span class="token comment"># 以GB为单位显示内存使用情况。 </span>
+-o <span class="token comment"># 不显示缓冲区调节列；</span>
+-s<span class="token operator">&lt;</span>间隔秒数<span class="token operator">&gt;</span> <span class="token comment"># 持续观察内存使用状况；</span>
+-t <span class="token comment"># 显示内存总和列；</span>
+-V <span class="token comment"># 显示版本信息。</span>
+</code></pre></div><h5 id="实例"><a href="#实例" class="header-anchor">#</a> 实例</h5> <div class="language- extra-class"><pre class="language-text"><code>free -h -s 3 	#	每隔三秒输出一次内存情况
+free -t    		# 以总和的形式显示内存的使用信息
+free -s 10 		# 周期性的查询内存使用信息，每10s 执行一次命令
+</code></pre></div><ul><li><code>Mem</code>：是内存的使用情况。</li> <li><code>Swap</code>：是交换空间的使用情况。</li> <li><code>total</code>：系统总的可用物理内存和交换空间大小。</li> <li><code>used</code>：已经被使用的物理内存和交换空间。</li> <li><code>free</code>：还有多少物理内存和交换空间可用使用，是真正尚未被使用的物理内存数量。</li> <li><code>shared</code>：被共享使用的物理内存大小。</li> <li><code>buff/cache</code>：被 buffer（缓冲区） 和 cache（缓存） 使用的物理内存大小。</li> <li><code>available</code>：还可以被应用程序使用的物理内存大小，它是从应用程序的角度看到的可用内存数量，available ≈ free + buffer + cache。</li></ul> <h4 id="vmstat"><a href="#vmstat" class="header-anchor">#</a> vmstat</h4> <blockquote><p>vmstat（VirtualMeomoryStatistics，虚拟内存统计）是Linux中监控内存的常用工具，可对操作系统的虚拟内存、进程、CPU等的整体情况进行监视，推荐使用。</p></blockquote> <h5 id="选项"><a href="#选项" class="header-anchor">#</a> 选项</h5> <div class="language-shell extra-class"><pre class="language-shell"><code>-a：显示活动内页；
+-f：显示启动后创建的进程总数；
+-m：显示slab信息；
+-n：头信息仅显示一次；
+-s：以表格方式显示事件计数器和内存状态；
+-d：报告磁盘状态；
+-p：显示指定的硬盘分区状态；
+-S：输出信息的单位。
+</code></pre></div><h5 id="参数"><a href="#参数" class="header-anchor">#</a> 参数</h5> <ul><li>事件间隔：状态信息刷新的时间间隔；</li> <li>次数：显示报告的次数。</li></ul> <h5 id="实例-2"><a href="#实例-2" class="header-anchor">#</a> 实例</h5> <div class="language- extra-class"><pre class="language-text"><code>vmstat 5 3				#	表示每隔5秒统计一次，一共统计三次。
+</code></pre></div><h5 id="字段说明"><a href="#字段说明" class="header-anchor">#</a> 字段说明</h5> <ul><li>procs</li></ul> <blockquote><p><code>r</code>：表示运行和等待CPU时间片的进程数（就是说多少个进程真的分配到CPU），这个值如果长期大于系统CPU个数，说明CPU不足，需要增加CPU。
+<code>b</code>：表示在等待资源的进程数，比如正在等待I/O或者内存交换等。</p></blockquote> <ul><li>memory</li></ul> <blockquote><p><code>swpd</code>：表示切换到内存交换区的内存大小，即虚拟内存已使用的大小（单位KB），如果大于0，表示你的机器物理内存不足了，如果不是程序内存泄露的原因，那么你该升级内存了或者把耗内存的任务迁移到其他机器。</p> <p><code>free</code>：表示当前空闲的物理内存。</p> <p><code>buff</code>：表示缓冲大小，一般对块设备的读写才需要缓冲</p> <p><code>Cache</code>：表示缓存大小，一般作为文件系统进行缓冲，频繁访问的文件都会被缓存，如果cache值非常大说明缓存文件比较多，如果此时io中的bi比较小，说明文件系统效率比较好。</p></blockquote> <ul><li>swap</li></ul> <blockquote><p><code>si</code>：表示数据由磁盘读入内存；通俗的讲就是每秒从磁盘读入虚拟内存的大小，如果这个值大于0，表示物理内存不够用或者内存泄露了，要查找耗内存进程解决掉。</p> <p><code>so</code>：表示由内存写入磁盘，也就是由内存交换区进入内存的数据大小。</p></blockquote> <blockquote><p><strong>!!</strong> 注意：一般情况下si、so的值都为0，如果si、so的值长期不为0，则说明系统内存不足，需要增加系统内存</p></blockquote> <ul><li>io</li></ul> <blockquote><p><code>bi</code>：表示由块设备读入数据的总量，即读磁盘，单位kb/s</p> <p><code>bo</code>：表示写到块设备数据的总量，即写磁盘，单位kb/s</p></blockquote> <ul><li>system</li></ul> <blockquote><p><code>in</code>：表示某一时间间隔内观测到的每秒设备终端数。</p> <p><code>cs</code>：表示每秒产生的上下文切换次数，这个值要越小越好，太大了，要考虑调低线程或者进程的数目。例如在apache和nginx这种web服务器中，我们一般做性能测试时会进行几千并发甚至几万并发的测试，选择web服务器的进程可以由进程或者线程的峰值一直下调，压测，直到cs到一个比较小的值，这个进程和线程数就是比较合适的值了。系统调用也是，每次调用系统函数，我们的代码就会进入内核空间，导致上下文切换，这个是很耗资源，也要尽量避免频繁调用系统函数。上下文切换次数过多表示你的CPU大部分浪费在上下文切换，导致CPU干正经事的时间少了，CPU没有充分利用，是不可取的。</p></blockquote> <blockquote><p><strong>!!</strong> 注意：这两个值越大，则由内核消耗的CPU就越多。</p></blockquote> <ul><li>CPU</li></ul> <blockquote><p><code>us</code>：表示用户进程消耗的CPU时间百分比，us值越高，说明用户进程消耗CPU时间越多，如果长期大于50%，则需要考虑优化程序或者算法。</p> <p><code>sy</code>：表示系统内核进程消耗的CPU时间百分比，一般来说us+sy应该小于80%，如果大于80%，说明可能存在CPU瓶颈。</p> <p><code>id</code>：表示CPU处在空间状态的时间百分比。</p> <p><code>wa</code>：表示IP等待所占用的CPU时间百分比，wa值越高，说明I/O等待越严重，根据经验wa的参考值为20%，如果超过20%，说明I/O等待严重，引起I/O等待的原因可能是磁盘大量随机读写造成的，也可能是磁盘或者监控器的贷款瓶颈（主要是块操作）造成的。</p></blockquote> <h4 id="sar"><a href="#sar" class="header-anchor">#</a> sar</h4> <blockquote><p>系统运行状态统计工具</p> <p>是Linux下系统运行状态统计工具，它将指定的操作系统状态计数器显示到标准输出设备。sar工具将对系统当前的状态进行取样，然后通过计算数据和比例来表达系统的当前运行状态。它的特点是可以连续对系统取样，获得大量的取样数据。取样数据和分析的结果都可以存入文件，使用它时消耗的系统资源很小。</p></blockquote> <h5 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h5> <div class="language-shell extra-class"><pre class="language-shell"><code>sar<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre></div><h5 id="选项-2"><a href="#选项-2" class="header-anchor">#</a> 选项</h5> <div class="language-shell extra-class"><pre class="language-shell"><code>-A：显示所有的报告信息；
+-b：显示I/O速率；
+-B：显示换页状态；
+-c：显示进程创建活动；
+-d：显示每个块设备的状态；
+-e：设置显示报告的结束时间；
+-f：从指定文件提取报告；
+-i：设状态信息刷新的间隔时间；
+-P：报告每个CPU的状态；
+-r：显示内存状态；
+-u：显示CPU利用率；
+-v：显示索引节点，文件和其他内核表的状态；
+-w：显示交换分区状态；
+-x：显示给定进程的状态
+</code></pre></div><h5 id="参数-2"><a href="#参数-2" class="header-anchor">#</a> 参数</h5> <ul><li>间隔时间：每次报告的间隔时间（秒）；</li> <li>次数：显示报告的次数。</li></ul> <h5 id="实例-3"><a href="#实例-3" class="header-anchor">#</a> 实例</h5> <div class="language- extra-class"><pre class="language-text"><code>sar -r 3		#	每隔三秒输出一次内存信息
+sar 60 10		# 观察系统部件10分钟，并对数据进行排序
+sar -ur 5 3 # 每隔5秒打印cpu,内存信息 打印3次
+</code></pre></div><h3 id="cpu瓶颈"><a href="#cpu瓶颈" class="header-anchor">#</a> CPU瓶颈</h3> <h3 id="cpu信息"><a href="#cpu信息" class="header-anchor">#</a> CPU信息</h3> <blockquote><p>查看所有信息</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>cat /proc/cpuinfo
+</code></pre></div><h5 id="查看cpu信息-型号"><a href="#查看cpu信息-型号" class="header-anchor">#</a> 查看CPU信息（型号）</h5> <div class="language- extra-class"><pre class="language-text"><code>cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+</code></pre></div><h5 id="查看物理cpu个数"><a href="#查看物理cpu个数" class="header-anchor">#</a> 查看物理CPU个数</h5> <div class="language- extra-class"><pre class="language-text"><code>cat /proc/cpuinfo| grep &quot;physical id&quot;| sort| uniq| wc -l
+16
+</code></pre></div><h5 id="查看每个物理cpu中core的个数-即核数"><a href="#查看每个物理cpu中core的个数-即核数" class="header-anchor">#</a> 查看每个物理CPU中core的个数(即核数)</h5> <div class="language- extra-class"><pre class="language-text"><code>cat /proc/cpuinfo| grep &quot;cpu cores&quot;| uniq
+</code></pre></div><h5 id="查看逻辑cpu的个数"><a href="#查看逻辑cpu的个数" class="header-anchor">#</a> 查看逻辑CPU的个数</h5> <div class="language- extra-class"><pre class="language-text"><code>cat /proc/cpuinfo| grep &quot;processor&quot;| wc -l
+</code></pre></div><h4 id="top"><a href="#top" class="header-anchor">#</a> top</h4> <blockquote><p>在Linux内核的操作系统中，进程是根据虚拟运行时间（由进程优先级、nice值加上实际占用的CPU时间进行动态计算得出）进行动态调度的。在执行进程时，需要从用户态转换到内核态，用户空间不能直接操作内核空间的函数。通常要利用系统调用来完成进程调度，而用户空间到内核空间的转换通常是通过软中断来完成的。例如要进行磁盘操作，用户态需要通过系统调用内核的磁盘操作指令，所以CPU消耗的时间被切分成用户态CPU消耗、系统（内核） CPU 消耗，以及磁盘操作 CPU 消耗。执行进程时，需要经过一系列的操作，进程首先在用户态执行，在执行过程中会进行进程优先级的调整（nice），通过系统调用到内核，再通过内核调用，硬中断、软中断，让硬件执行任务。执行完成之后，再从内核态返回给系统调用，最后系统调用将结果返回给用户态的进程。</p></blockquote> <blockquote><p>top可以查看CPU总体消耗，包括分项消耗，如User，System，Idle，nice等。<code>Shift + H</code>显示java线程；<code>Shift + M</code>按照内存使用排序；<code>Shift + P</code>按照CPU使用时间（使用率）排序；<code>Shift + T</code>按照CPU累积使用时间排序；多核CPU，进入top视图<code>1</code>，可以看到各各CPU的负载情况。</p></blockquote> <h4 id="选项-3"><a href="#选项-3" class="header-anchor">#</a> 选项</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>-b：以批处理模式操作；
+-c：显示完整的治命令；
+-d：屏幕刷新间隔时间；
+-I：忽略失效过程；
+-s：保密模式；
+-S：累积模式；
+-i<span class="token operator">&lt;</span>时间<span class="token operator">&gt;</span>：设置间隔时间；
+-u<span class="token operator">&lt;</span>用户名<span class="token operator">&gt;</span>：指定用户名；
+-p<span class="token operator">&lt;</span>进程号<span class="token operator">&gt;</span>：指定进程；
+-n<span class="token operator">&lt;</span>次数<span class="token operator">&gt;</span>：循环显示的次数。
+</code></pre></div><h4 id="top交互命令"><a href="#top交互命令" class="header-anchor">#</a> top交互命令</h4> <blockquote><p>在top命令执行过程中可以使用的一些交互命令。这些命令都是单字母的，如果在命令行中使用了-s选项， 其中一些命令可能会被屏蔽。</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code>h：显示帮助画面，给出一些简短的命令总结说明；
+k：终止一个进程；
+i：忽略闲置和僵死进程，这是一个开关式命令；
+q：退出程序；
+r：重新安排一个进程的优先级别；
+S：切换到累计模式；
+s：改变两次刷新之间的延迟时间（单位为s），如果有小数，就换算成ms。输入0值则系统将不断刷新，默认值是5s；
+f或者F：从当前显示中添加或者删除项目；
+o或者O：改变显示项目的顺序；
+l：切换显示平均负载和启动时间信息；
+m：切换显示内存信息；
+t：切换显示进程和CPU状态信息；
+c：切换显示命令名称和完整命令行；
+M：根据驻留内存大小进行排序；
+P：根据CPU使用百分比大小进行排序；
+T：根据时间/累计时间进行排序；
+w：将当前设置写入~/.toprc文件中。
+</code></pre></div><h5 id="实例-4"><a href="#实例-4" class="header-anchor">#</a> 实例</h5> <div class="language- extra-class"><pre class="language-text"><code>top 
+15:24:11 up 8 days,  7:52,  1 user,  load average: 5.73, 6.85, 7.33
+Tasks:  17 total,   1 running,  16 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 13.9 us,  9.2 sy,  0.0 ni, 76.1 id,  0.1 wa,  0.0 hi,  0.1 si,  0.7 st
+KiB Mem : 11962365+total, 50086832 free, 38312808 used, 31224016 buff/cache
+KiB Swap:        0 total,        0 free,        0 used. 75402760 avail Mem
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+     1 root      20   0   15376   1988   1392 S   0.0  0.0   0:00.06 sh
+</code></pre></div><ul><li>第一行</li></ul> <blockquote><p>系统时间</p> <p>up[运行时间 ]</p> <p>user[ 当前登录用户数]</p> <p>load average[负载均衡情况，分别表示1分钟，5分钟，15分钟负载情况]</p></blockquote> <ul><li>第二行</li></ul> <blockquote><p>total[总进程数]</p> <p>running [运行数]</p> <p>sleeping[休眠 ]</p> <p>stopped [停止]</p> <p>zombie[僵尸进程]</p></blockquote> <ul><li>第三行</li></ul> <blockquote><p>us[用户空间CPU占比]</p> <p>sy[内核空间CPU占比]</p> <p>ni[改变过优先级的进程CPU占比]</p> <p>id[空闲CPU占比]</p> <p>wa[IO等待占用CPU占比]</p> <p>hi [硬中断占用CPU占比]</p> <p>si [ 软中断占用CPU占比0.1%,]</p> <p>st[当前VM中的cpu 时钟被虚拟化偷走的比例]</p></blockquote> <ul><li>第四行</li></ul> <blockquote><p>total[物理内存总量]</p> <p>free[空闲内存总量]</p> <p>used[使用的物理内存总量]</p> <p>buff/cache[用作内核缓存的内存量]</p></blockquote> <ul><li>第五行</li></ul> <blockquote><p>total[交换区总量]</p> <p>used[使用的交换区总量]</p> <p>free[空闲交换区总量]</p> <p>cached[缓冲的交换区总量]</p></blockquote> <p>第七行表示：</p> <ul><li><code>PID</code>: 进程id</li> <li><code>USER</code>:进程所有者</li> <li><code>PR</code>:进程优先级</li> <li><code>NI</code>:nice值。负值表示高优先级，正值表示低优先级</li> <li><code>VIRT</code>:虚拟内存，进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES</li> <li><code>RES</code>:常驻内存，进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA</li> <li><code>SHR</code>:共享内存，共享内存大小，单位kb</li> <li><code>S</code>:进程状态。D=不可中断的睡眠状态 R=运行 S=睡眠 T=跟踪/停止 Z=僵尸进程</li> <li><code>%CPU</code>:上次更新到现在的CPU时间占用百分比</li> <li><code>%MEM</code>:进程使用的物理内存百分比</li> <li><code>TIME+</code>:进程使用的CPU时间总计，单位1/100秒</li> <li><code>COMMAND</code>:进程名称（命令名/命令行）</li></ul> <h3 id="网络瓶颈"><a href="#网络瓶颈" class="header-anchor">#</a> 网络瓶颈</h3> <h4 id="查看路由经过的地址"><a href="#查看路由经过的地址" class="header-anchor">#</a> 查看路由经过的地址</h4> <blockquote><p><code>traceroute ip</code>可以查看路由经过的地址，常用来统计网络在各个路由区段的耗时，如：</p></blockquote> <h4 id="netstat"><a href="#netstat" class="header-anchor">#</a> netstat</h4> <blockquote><p>用来打印Linux中网络系统的状态信息，可让你得知整个Linux系统的网络情况</p></blockquote> <h3 id="选项-4"><a href="#选项-4" class="header-anchor">#</a> 选项</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>-a或--all：显示所有连线中的Socket；
+-A<span class="token operator">&lt;</span>网络类型<span class="token operator">&gt;</span>或--<span class="token operator">&lt;</span>网络类型<span class="token operator">&gt;</span>：列出该网络类型连线中的相关地址；
+-c或--continuous：持续列出网络状态；
+-C或--cache：显示路由器配置的快取信息；
+-e或--extend：显示网络其他相关信息；
+-F或--fib：显示FIB；
+-g或--groups：显示多重广播功能群组组员名单；
+-h或--help：在线帮助；
+-i或--interfaces：显示网络界面信息表单；
+-l或--listening：显示监控中的服务器的Socket；
+-M或--masquerade：显示伪装的网络连线；
+-n或--numeric：直接使用ip地址，而不通过域名服务器；
+-N或--netlink或--symbolic：显示网络硬件外围设备的符号连接名称；
+-o或--timers：显示计时器；
+-p或--programs：显示正在使用Socket的程序识别码和程序名称；
+-r或--route：显示Routing Table；
+-s或--statistice：显示网络工作信息统计表；
+-t或--tcp：显示TCP传输协议的连线状况；
+-u或--udp：显示UDP传输协议的连线状况；
+-v或--verbose：显示指令执行过程；
+-V或--version：显示版本信息；
+-w或--raw：显示RAW传输协议的连线状况；
+-x或--unix：此参数的效果和指定<span class="token string">&quot;-A unix&quot;</span>参数相同；
+--ip或--inet：此参数的效果和指定<span class="token string">&quot;-A inet&quot;</span>参数相同。
+</code></pre></div><h4 id="实例-5"><a href="#实例-5" class="header-anchor">#</a> 实例</h4> <blockquote><p>列出所有端口 (包括监听和未监听的)</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -a     <span class="token comment">#列出所有端口</span>
+<span class="token function">netstat</span> -at    <span class="token comment">#列出所有tcp端口</span>
+<span class="token function">netstat</span> -au    <span class="token comment">#列出所有udp端口                             </span>
+</code></pre></div><blockquote><p>列出所有处于监听状态的 Sockets</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -l        <span class="token comment">#只显示监听端口</span>
+<span class="token function">netstat</span> -lt       <span class="token comment">#只列出所有监听 tcp 端口</span>
+<span class="token function">netstat</span> -lu       <span class="token comment">#只列出所有监听 udp 端口</span>
+<span class="token function">netstat</span> -lx       <span class="token comment">#只列出所有监听 UNIX 端口</span>
+</code></pre></div><blockquote><p>显示每个协议的统计信息</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -s   显示所有端口的统计信息
+<span class="token function">netstat</span> -st   显示TCP端口的统计信息
+<span class="token function">netstat</span> -su   显示UDP端口的统计信息
+</code></pre></div><blockquote><p>在netstat输出中显示 PID 和进程名称</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -pt
+</code></pre></div><blockquote><p>持续输出netstat信息</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -c   <span class="token comment">#每隔一秒输出网络信息</span>
+</code></pre></div><blockquote><p>*显示系统不支持的地址族(Address Families)</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> --verbose
+
+netstat: no support <span class="token keyword">for</span> <span class="token variable"><span class="token variable">`</span>AF IPX' on this system.
+netstat: no support <span class="token keyword">for</span> <span class="token variable">`</span></span>AF AX25<span class="token string">' on this system.
+netstat: no support for <span class="token variable"><span class="token variable">`</span>AF X25' on this system.
+netstat: no support <span class="token keyword">for</span> <span class="token variable">`</span></span>AF NETROM'</span> on this system.
+</code></pre></div><blockquote><p>显示核心路由信息</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -r
+</code></pre></div><blockquote><p><strong>找出程序运行的端口</strong></p></blockquote> <p>并不是所有的进程都能找到，没有权限的会不显示，使用 root 权限查看所有的信息。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -ap <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">ssh</span>
+</code></pre></div><blockquote><p>找出运行在指定端口的进程</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -an <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">':80'</span>
+</code></pre></div><blockquote><p>显示网络</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">netstat</span> -ie
+</code></pre></div><h5 id="查看网络错误"><a href="#查看网络错误" class="header-anchor">#</a> 查看网络错误</h5> <p><code>netstat -i</code>可以查看网络错误：</p> <div class="language- extra-class"><pre class="language-text"><code>$ netstat -i
+Kernel Interface table
+Iface             MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+ens33            1500   570291      0      0 0        225897      0      0      0 BMRU
+lo              65536      130      0      0 0           130      0      0      0 LRU
+</code></pre></div><ul><li><code>Iface</code>: 网络接口名称;</li> <li><code>MTU</code>: 最大传输单元，它限制了数据帧的最大长度，不同的网络类型都有一个上限值，如：以太网的MTU是1500；</li> <li><code>RX-OK</code>：接收时，正确的数据包数。</li> <li><code>RX-ERR</code>：接收时，产生错误的数据包数。</li> <li><code>RX-DRP</code>：接收时，丢弃的数据包数。</li> <li><code>RX-OVR</code>：接收时，由于过速（在数据传输中，由于接收设备不能接收按照发送速率传送来的数据而使数据丢失）而丢失的数据包数。</li> <li><code>TX-OK</code>：发送时，正确的数据包数。</li> <li><code>TX-ERR</code>：发送时，产生错误的数据包数。</li> <li><code>TX-DRP</code>：发送时，丢弃的数据包数。</li> <li><code>TX-OVR</code>：发送时，由于过速而丢失的数据包数。</li> <li><code>Flg</code>：标志，B 已经设置了一个广播地址。L 该接口是一个回送设备。M 接收所有数据包（混乱模式）。N 避免跟踪。O 在该接口上，禁用ARP。P 这是一个点到点链接。R 接口正在运行。U 接口处于“活动”状态。</li></ul> <h3 id="磁盘瓶颈"><a href="#磁盘瓶颈" class="header-anchor">#</a> 磁盘瓶颈</h3> <h4 id="df"><a href="#df" class="header-anchor">#</a> df</h4> <blockquote><p>用于显示磁盘分区上的可使用的磁盘空间。默认显示单位为KB。可以利用该命令来获取硬盘被占用了多少空间，目前还剩下多少空间等信息</p></blockquote> <h5 id="选项-5"><a href="#选项-5" class="header-anchor">#</a> 选项</h5> <div class="language-shell extra-class"><pre class="language-shell"><code>-a或--all：包含全部的文件系统；
+--block-size<span class="token operator">=</span><span class="token operator">&lt;</span>区块大小<span class="token operator">&gt;</span>：以指定的区块大小来显示区块数目；
+-h或--human-readable：以可读性较高的方式来显示信息；
+-H或--si：与-h参数相同，但在计算时是以1000 Bytes为换算单位而非1024 Bytes；
+-i或--inodes：显示inode的信息；
+-k或--kilobytes：指定区块大小为1024字节；
+-l或--local：仅显示本地端的文件系统；
+-m或--megabytes：指定区块大小为1048576字节；
+--no-sync：在取得磁盘使用信息前，不要执行sync指令，此为预设值；
+-P或--portability：使用POSIX的输出格式；
+--sync：在取得磁盘使用信息前，先执行sync指令；
+-t<span class="token operator">&lt;</span>文件系统类型<span class="token operator">&gt;</span>或--type<span class="token operator">=</span><span class="token operator">&lt;</span>文件系统类型<span class="token operator">&gt;</span>：仅显示指定文件系统类型的磁盘信息；
+-T或--print-type：显示文件系统的类型；
+-x<span class="token operator">&lt;</span>文件系统类型<span class="token operator">&gt;</span>或--exclude-type<span class="token operator">=</span><span class="token operator">&lt;</span>文件系统类型<span class="token operator">&gt;</span>：不要显示指定文件系统类型的磁盘信息；
+--help：显示帮助；
+--version：显示版本信息。
+</code></pre></div><h5 id="参数-3"><a href="#参数-3" class="header-anchor">#</a> 参数</h5> <blockquote><p>文件：指定文件系统上的文件。</p></blockquote> <h5 id="大小格式"><a href="#大小格式" class="header-anchor">#</a> 大小格式</h5> <blockquote><p>显示值以 <code>--block-size</code> 和 <code>DF_BLOCK_SIZE</code>，<code>BLOCK_SIZE</code> 和 <code>BLOCKSIZE</code> 环境变量中的第一个可用 <code>SIZE</code> 为单位。 否则，单位默认为 <code>1024</code> 个字节（如果设置 <code>POSIXLY_CORRECT</code>，则为<code>512</code>）。</p></blockquote> <blockquote><p>SIZE是一个整数和可选单位（例如：10M是10 * 1024 * 1024）。 单位是K，M，G，T，P，E，Z，Y（1024的幂）或KB，MB，...（1000的幂）。</p></blockquote> <h5 id="实例-6"><a href="#实例-6" class="header-anchor">#</a> 实例</h5> <blockquote><p>使用<code>-h</code>选项以KB以上的单位来显示，可读性高：</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">df</span> -h
+</code></pre></div><blockquote><p>查看全部文件系统</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">df</span> -a
+
+</code></pre></div><blockquote><p>显示 <code>public</code> 目录中的可用空间量，如以下输出中所示：</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">df</span> public
+</code></pre></div><blockquote><p>查看磁盘剩余空间使用</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>df -hl
+</code></pre></div><h4 id="du"><a href="#du" class="header-anchor">#</a> du</h4> <blockquote><p>也是查看使用空间的，但是与df命令不同的是Linux du命令是对文件和目录磁盘使用的空间的查看，还是和df命令有一些区别的</p></blockquote> <h5 id="选项-6"><a href="#选项-6" class="header-anchor">#</a> 选项</h5> <div class="language-shell extra-class"><pre class="language-shell"><code>-a或-all 显示目录中个别文件的大小。
+-b或-bytes 显示目录或文件大小时，以byte为单位。
+-c或--total 除了显示个别目录或文件的大小外，同时也显示所有目录或文件的总和。
+-k或--kilobytes 以KB<span class="token punctuation">(</span>1024bytes<span class="token punctuation">)</span>为单位输出。
+-m或--megabytes 以MB为单位输出。
+-s或--summarize 仅显示总计，只列出最后加总的值。
+-h或--human-readable 以K，M，G为单位，提高信息的可读性。
+-x或--one-file-xystem 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过。
+-L<span class="token operator">&lt;</span>符号链接<span class="token operator">&gt;</span>或--dereference<span class="token operator">&lt;</span>符号链接<span class="token operator">&gt;</span> 显示选项中所指定符号链接的源文件大小。
+-S或--separate-dirs 显示个别目录的大小时，并不含其子目录的大小。
+-X<span class="token operator">&lt;</span>文件<span class="token operator">&gt;</span>或--exclude-from<span class="token operator">=</span><span class="token operator">&lt;</span>文件<span class="token operator">&gt;</span> 在<span class="token operator">&lt;</span>文件<span class="token operator">&gt;</span>指定目录或文件。
+--exclude<span class="token operator">=</span><span class="token operator">&lt;</span>目录或文件<span class="token operator">&gt;</span> 略过指定的目录或文件。
+-D或--dereference-args 显示指定符号链接的源文件大小。
+-H或--si 与-h参数相同，但是K，M，G是以1000为换算单位。
+-l或--count-links 重复计算硬件链接的文件。
+</code></pre></div><h5 id="实例-7"><a href="#实例-7" class="header-anchor">#</a> 实例</h5> <blockquote><p>只显示当前目录下面的子目录的目录大小和当前目录的总的大小，最下面的为当前目录的总大小</p></blockquote> <blockquote><p>显示指定文件所占空间：</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">du</span> log.log
+</code></pre></div><blockquote><p>查看指定目录的所占空间：</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">du</span> scf
+</code></pre></div><blockquote><p>显示多个文件所占空间：</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">du</span> log1.tar.gz log2.tar.gz
+</code></pre></div><blockquote><p>只显示总和的大小:</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">du</span> -s
+</code></pre></div><blockquote><p>显示总和的大小且易读:</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">du</span> -sh <span class="token variable">$dir</span>
+</code></pre></div><h4 id="iostat"><a href="#iostat" class="header-anchor">#</a> iostat</h4> <blockquote><p>被用于监视系统输入输出设备和CPU的使用情况。它的特点是汇报磁盘活动统计情况，同时也会汇报出CPU使用情况。同vmstat一样，iostat也有一个弱点，就是它不能对某个进程进行深入分析，仅对系统的整体情况进行分析。</p></blockquote> <h5 id="选项-7"><a href="#选项-7" class="header-anchor">#</a> 选项</h5> <div class="language-shell extra-class"><pre class="language-shell"><code>-c：仅显示CPU使用情况；
+-d：仅显示设备利用率；
+-k：显示状态以千字节每秒为单位，而不使用块每秒；
+-m：显示状态以兆字节每秒为单位；
+-p：仅显示块设备和所有被使用的其他分区的状态；
+-t：显示每个报告产生时的时间；
+-V：显示版号并退出；
+-x：显示扩展状态。
+</code></pre></div><h5 id="参数-4"><a href="#参数-4" class="header-anchor">#</a> 参数</h5> <ul><li>间隔时间：每次报告的间隔时间（秒）；</li> <li>次数：显示报告的次数。</li></ul> <h5 id="实例-8"><a href="#实例-8" class="header-anchor">#</a> 实例</h5> <blockquote><p>通<code>iostat</code>查看磁盘总体的读写情况：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost ~]# iostat
+Linux 3.10.0-1062.el7.x86_64 (localhost.localdomain)    2020年05月02日  _x86_64_        (2 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.17    0.00    0.20    0.46    0.00   99.17
+
+Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+sda               1.56        30.45        39.61    4659620    6060644
+scd0              0.00         0.02         0.00       3102          0
+dm-0              1.96        30.01        38.42    4591998    5878155
+dm-1              0.09         0.09         0.30      13840      45328
+</code></pre></div><ul><li><code>tps</code>：该设备每秒的传输次数。</li> <li><code>kB_read/s</code>：每秒从设备（drive expressed）读取的数据量；</li> <li><code>kB_wrtn/s</code>：每秒向设备（drive expressed）写入的数据量；</li> <li><code>kB_read</code>：读取的总数据量；</li> <li><code>kB_wrtn</code>：写入的总数量数据量；</li></ul> <blockquote><p>查看磁盘详细读写情况</p></blockquote> <p>通过<code>iostat -x 1 3</code>可以看到磁盘详细读写情况，没隔一秒输出一次一共输出3次，当看到I/O等待时间所占CPU时间的比重很高的时候，首先要检查的就是机器是否正在大量使用交换空间，同时关注<code>iowait</code>占比cpu的消耗是否很大，如果大说明磁盘存在大的瓶颈，同时关注<code>await</code>，表示磁盘的响应时间以便小于5ms：</p> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost ~]# iostat -x 1 3
+Linux 3.10.0-1062.el7.x86_64 (localhost.localdomain)    2020年05月02日  _x86_64_        (2 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.17    0.00    0.20    0.46    0.00   99.16
+
+Device:         rrqm/s   wrqm/s     r/s     w/s    rkB/s    wkB/s avgrq-sz avgqu-sz   await r_await w_await  svctm  %util
+sda               0.01     0.49    0.63    0.95    30.59    39.78    89.58     0.34  214.23   49.16  323.48   8.55   1.34
+scd0              0.00     0.00    0.00    0.00     0.02     0.00    98.48     0.00    1.21    1.21    0.00   0.95   0.00
+dm-0              0.00     0.00    0.62    1.35    30.15    38.59    69.70     0.91  460.67   49.12  648.54   6.66   1.31
+dm-1              0.00     0.00    0.02    0.07     0.09     0.30     8.52     0.04  442.74   95.43  521.17   6.91   0.06
+</code></pre></div><p><code>avg-cpu</code>表示总体cpu使用情况统计信息，对于多核cpu，这里为所有cpu的平均值：</p> <ul><li><code>%user</code>：CPU处在用户模式下的时间百分比。</li> <li><code>%nice</code>：CPU处在带NICE值的用户模式下的时间百分比。</li> <li><code>%system</code>：CPU处在系统模式下的时间百分比。</li> <li><code>%iowait</code>：CPU等待输入输出完成时间的百分比，如果%iowait的值过高，表示硬盘存在I/O瓶颈。</li> <li><code>%steal</code>：管理程序维护另一个虚拟处理器时，虚拟CPU的无意识等待时间百分比。</li> <li><code>%idle</code>：CPU空闲时间百分比，如果%idle值高，表示CPU较空闲；如果%idle值高但系统响应慢时，可能是CPU等待分配内存，应加大内存容量；如果%idle值持续低于10，表明CPU处理能力相对较低，系统中最需要解决的资源是CPU。。</li></ul> <p><code>Device</code>表示设备信息：</p> <ul><li><code>rrqm/s</code>：每秒对该设备的读请求被合并次数，文件系统会对读取同块(block)的请求进行合并</li> <li><code>wrqm/s</code>：每秒对该设备的写请求被合并次数</li> <li><code>r/s</code>：每秒完成的读次数</li> <li><code>w/s</code>：每秒完成的写次数</li> <li><code>rkB/s</code>：每秒读数据量(kB为单位)</li> <li><code>wkB/s</code>：每秒写数据量(kB为单位)</li> <li><code>avgrq-sz</code>：平均每次IO操作的数据量(扇区数为单位)</li> <li><code>avgqu-sz</code>：平均等待处理的IO请求队列长度</li> <li><code>await</code>：平均每次IO请求等待时间(包括等待时间和处理时间，毫秒为单位)</li> <li><code>svctm</code>：平均每次IO请求的处理时间(毫秒为单位)</li> <li><code>%util</code>：一秒中有百分之多少的时间用于 I/O如果%util接近100%，说明产生的I/O请求太多，I/O系统已经满负荷。<code>idle</code>小于70% IO压力就较大了，一般读取速度有较多的wait。</li></ul> <blockquote><p><strong>!!</strong> <code>iostat -xmd 1 3</code>：新增<code>m</code>选项可以在输出是使用<code>M</code>为单位。</p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/db117/doc/edit/master/docs/os/linux/性能分析.md" target="_blank" rel="noopener noreferrer">编辑文档！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">4/12/2021, 7:55:30 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/os/linux/centos.html" class="prev">
+        Centos相关
+      </a></span> <span class="next"><a href="/os/linux/日志分析.html">
+        日志分析
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.a83ba246.js" defer></script><script src="/assets/js/2.310a7e4d.js" defer></script><script src="/assets/js/57.6beeb238.js" defer></script>
+  </body>
+</html>
