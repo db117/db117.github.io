@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>二分算法 | 大兵个人主页</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?61e2d16dac6a568e22f28ee4974c119a";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    <meta name="description" content="文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.74761522.css" as="style"><link rel="preload" href="/assets/js/app.5683d718.js" as="script"><link rel="preload" href="/assets/js/2.1ab7b5a1.js" as="script"><link rel="preload" href="/assets/js/10.884438a0.js" as="script"><link rel="prefetch" href="/assets/js/100.d1171c7e.js"><link rel="prefetch" href="/assets/js/101.1d64efe3.js"><link rel="prefetch" href="/assets/js/102.0c9d989d.js"><link rel="prefetch" href="/assets/js/103.24e8da14.js"><link rel="prefetch" href="/assets/js/104.e8e75162.js"><link rel="prefetch" href="/assets/js/105.ace6e172.js"><link rel="prefetch" href="/assets/js/106.b7ac2587.js"><link rel="prefetch" href="/assets/js/107.f6511da1.js"><link rel="prefetch" href="/assets/js/108.d480b56c.js"><link rel="prefetch" href="/assets/js/109.51374716.js"><link rel="prefetch" href="/assets/js/11.d9ae37f0.js"><link rel="prefetch" href="/assets/js/110.e62336bb.js"><link rel="prefetch" href="/assets/js/111.6ca5aa21.js"><link rel="prefetch" href="/assets/js/112.8539d77c.js"><link rel="prefetch" href="/assets/js/113.0c056b6b.js"><link rel="prefetch" href="/assets/js/114.8bbbe4fb.js"><link rel="prefetch" href="/assets/js/115.82b5cdc6.js"><link rel="prefetch" href="/assets/js/116.710be8a4.js"><link rel="prefetch" href="/assets/js/117.2b0a22d6.js"><link rel="prefetch" href="/assets/js/118.f7c88bfb.js"><link rel="prefetch" href="/assets/js/119.2080d7f9.js"><link rel="prefetch" href="/assets/js/12.372b0582.js"><link rel="prefetch" href="/assets/js/120.08163eb5.js"><link rel="prefetch" href="/assets/js/121.f1a38b79.js"><link rel="prefetch" href="/assets/js/122.ecbffc91.js"><link rel="prefetch" href="/assets/js/123.9c45a298.js"><link rel="prefetch" href="/assets/js/124.af078436.js"><link rel="prefetch" href="/assets/js/125.9694042a.js"><link rel="prefetch" href="/assets/js/126.2a97b68f.js"><link rel="prefetch" href="/assets/js/127.29080b5b.js"><link rel="prefetch" href="/assets/js/128.7725352c.js"><link rel="prefetch" href="/assets/js/13.18f07734.js"><link rel="prefetch" href="/assets/js/14.488a4a7f.js"><link rel="prefetch" href="/assets/js/15.820b6573.js"><link rel="prefetch" href="/assets/js/16.23ca6b6c.js"><link rel="prefetch" href="/assets/js/17.0001bb19.js"><link rel="prefetch" href="/assets/js/18.3983d82e.js"><link rel="prefetch" href="/assets/js/19.51bc2b89.js"><link rel="prefetch" href="/assets/js/20.684da334.js"><link rel="prefetch" href="/assets/js/21.8af8af93.js"><link rel="prefetch" href="/assets/js/22.dcaa4d28.js"><link rel="prefetch" href="/assets/js/23.8cfc5add.js"><link rel="prefetch" href="/assets/js/24.1322dd66.js"><link rel="prefetch" href="/assets/js/25.86534374.js"><link rel="prefetch" href="/assets/js/26.7b3e0f98.js"><link rel="prefetch" href="/assets/js/27.52baeaa8.js"><link rel="prefetch" href="/assets/js/28.d9fb4356.js"><link rel="prefetch" href="/assets/js/29.5182729c.js"><link rel="prefetch" href="/assets/js/3.cbe1ba68.js"><link rel="prefetch" href="/assets/js/30.7b134ca4.js"><link rel="prefetch" href="/assets/js/31.2fd56b9d.js"><link rel="prefetch" href="/assets/js/32.60c10b86.js"><link rel="prefetch" href="/assets/js/33.ade93ed1.js"><link rel="prefetch" href="/assets/js/34.a6864fcd.js"><link rel="prefetch" href="/assets/js/35.2ab0adfb.js"><link rel="prefetch" href="/assets/js/36.b49f67e1.js"><link rel="prefetch" href="/assets/js/37.93fc78ce.js"><link rel="prefetch" href="/assets/js/38.dc2679bf.js"><link rel="prefetch" href="/assets/js/39.95f10f51.js"><link rel="prefetch" href="/assets/js/4.06bacc26.js"><link rel="prefetch" href="/assets/js/40.c5793b85.js"><link rel="prefetch" href="/assets/js/41.4cf0abfb.js"><link rel="prefetch" href="/assets/js/42.8d38b4ae.js"><link rel="prefetch" href="/assets/js/43.18d2d38d.js"><link rel="prefetch" href="/assets/js/44.ab9e8b80.js"><link rel="prefetch" href="/assets/js/45.90d1c93a.js"><link rel="prefetch" href="/assets/js/46.07652886.js"><link rel="prefetch" href="/assets/js/47.7c00287c.js"><link rel="prefetch" href="/assets/js/48.b998db8c.js"><link rel="prefetch" href="/assets/js/49.4c510c02.js"><link rel="prefetch" href="/assets/js/5.a28b86e3.js"><link rel="prefetch" href="/assets/js/50.8e8c2a45.js"><link rel="prefetch" href="/assets/js/51.9d642097.js"><link rel="prefetch" href="/assets/js/52.eeb74599.js"><link rel="prefetch" href="/assets/js/53.af3e2f23.js"><link rel="prefetch" href="/assets/js/54.ab73dd98.js"><link rel="prefetch" href="/assets/js/55.119cff05.js"><link rel="prefetch" href="/assets/js/56.24565ab7.js"><link rel="prefetch" href="/assets/js/57.c000e363.js"><link rel="prefetch" href="/assets/js/58.b1eec7a1.js"><link rel="prefetch" href="/assets/js/59.167ab200.js"><link rel="prefetch" href="/assets/js/6.f6d8fa80.js"><link rel="prefetch" href="/assets/js/60.251d820b.js"><link rel="prefetch" href="/assets/js/61.6386f21e.js"><link rel="prefetch" href="/assets/js/62.4d902e62.js"><link rel="prefetch" href="/assets/js/63.fe93130c.js"><link rel="prefetch" href="/assets/js/64.c977efcf.js"><link rel="prefetch" href="/assets/js/65.b1839931.js"><link rel="prefetch" href="/assets/js/66.b96bcdbf.js"><link rel="prefetch" href="/assets/js/67.9c19bb4c.js"><link rel="prefetch" href="/assets/js/68.81a0ed8e.js"><link rel="prefetch" href="/assets/js/69.728e1e5d.js"><link rel="prefetch" href="/assets/js/7.907c498e.js"><link rel="prefetch" href="/assets/js/70.cfd280ca.js"><link rel="prefetch" href="/assets/js/71.a5bc9816.js"><link rel="prefetch" href="/assets/js/72.39a656f4.js"><link rel="prefetch" href="/assets/js/73.202488c5.js"><link rel="prefetch" href="/assets/js/74.b361f864.js"><link rel="prefetch" href="/assets/js/75.710dbf4b.js"><link rel="prefetch" href="/assets/js/76.0241b9dc.js"><link rel="prefetch" href="/assets/js/77.344a4f57.js"><link rel="prefetch" href="/assets/js/78.def1fc4c.js"><link rel="prefetch" href="/assets/js/79.f182adce.js"><link rel="prefetch" href="/assets/js/8.60078600.js"><link rel="prefetch" href="/assets/js/80.af3d3f9c.js"><link rel="prefetch" href="/assets/js/81.02a94b4c.js"><link rel="prefetch" href="/assets/js/82.e7f23420.js"><link rel="prefetch" href="/assets/js/83.1eee79d8.js"><link rel="prefetch" href="/assets/js/84.93e155c2.js"><link rel="prefetch" href="/assets/js/85.15f05f76.js"><link rel="prefetch" href="/assets/js/86.b7201155.js"><link rel="prefetch" href="/assets/js/87.2a257f9b.js"><link rel="prefetch" href="/assets/js/88.0ba7a251.js"><link rel="prefetch" href="/assets/js/89.c9074da7.js"><link rel="prefetch" href="/assets/js/9.fa928b27.js"><link rel="prefetch" href="/assets/js/90.da8d285f.js"><link rel="prefetch" href="/assets/js/91.60e9fd21.js"><link rel="prefetch" href="/assets/js/92.6d1a76f9.js"><link rel="prefetch" href="/assets/js/93.5eceb79e.js"><link rel="prefetch" href="/assets/js/94.15e6cdfc.js"><link rel="prefetch" href="/assets/js/95.ab0d8d5a.js"><link rel="prefetch" href="/assets/js/96.33752094.js"><link rel="prefetch" href="/assets/js/97.8ad5ac3e.js"><link rel="prefetch" href="/assets/js/98.89b32eb1.js"><link rel="prefetch" href="/assets/js/99.77b445ed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.74761522.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大兵个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/os/" class="nav-link">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/运维/" class="nav-link">
+  运维相关
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link router-link-active">
+  算法
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/os/" class="nav-link">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/运维/" class="nav-link">
+  运维相关
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/algorithm/" aria-current="page" class="sidebar-link">算法</a></li><li><a href="/algorithm/binarySearch.html" aria-current="page" class="active sidebar-link">二分算法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/algorithm/常见算法.html" class="sidebar-link">常见算法</a></li><li><a href="/algorithm/排列组合.html" class="sidebar-link">排列组合</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="精确查找"><a href="#精确查找" class="header-anchor">#</a> 精确查找</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * 精准查询,查询不到返回-1
+ */
+public int bs(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+
+    while (left &lt;= right) {
+        // 偶数取左边
+        int mid = left + ((right - left) &gt;&gt; 1);
+
+        int num = nums[mid];
+        if (num == target) {
+            // 找到返回
+            return mid;
+        } else if (num &lt; target) {
+            // 移动左边界
+            left = mid + 1;
+        } else {
+            // 移动右边界
+            right = mid - 1;
+        }
+    }
+    return -1;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="找等于目标值的最小索引"><a href="#找等于目标值的最小索引" class="header-anchor">#</a> 找等于目标值的最小索引</h3> <p>两种写法，主要区别是 <code>while</code> 判断条件。</p> <p>当 <code>left&lt;=right</code> 时结束时 <code>left</code> 不等于 <code>right</code>。<code>left</code> 有越界风险。需要判断。</p> <p>当 <code>left&lt;right</code>时结束时 <code>left</code> 等于 <code>right</code>。无需判断是否越界。但是需要判断是否找到目标值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * 找到最左边的索引,找不到返回-1
+ */
+public int bsLeft(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left &lt;= right) {
+        int mid = left + ((right - left) &gt;&gt; 1);
+        int num = nums[mid];
+        if (num &lt; target) {
+            // 移动左边界
+            left = mid + 1;
+        } else if (num &gt; target) {
+            // 移动右边界
+            right = mid - 1;
+        } else {
+            // 锁定左边
+            right = mid - 1;
+        }
+    }
+    // 检查越界,是否找到
+    if (left &gt;= nums.length || nums[left] != target) {
+        return -1;
+    }
+    return left;
+}
+
+public int bsLeft1(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left &lt; right) {
+        // 左边中位数
+        int mid = left + ((right - left) &gt;&gt; 1);
+        if (nums[mid] &lt; target) {
+            // 移动左边界
+            // 上面选择左边中位数,所有加一
+            left = mid + 1;
+        } else {
+            // 大于等于则保持右边界
+            // 等于则继续往左边查找
+            right = mid;
+        }
+    }
+
+    // 需要判断是否找到
+    return nums[right] == target ? right : -1;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><h3 id="找等于目标值的最大索引"><a href="#找等于目标值的最大索引" class="header-anchor">#</a> 找等于目标值的最大索引</h3> <p>区别同上</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * 查找最右边的索引,找不到返回-1
+ */
+public int bsRight(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left &lt;= right) {
+        int mid = left + ((right - left) &gt;&gt; 1);
+        int num = nums[mid];
+        if (num &lt; target) {
+            // 移动左边界
+            left = mid + 1;
+        } else if (num &gt; target) {
+            // 移动右边界
+            right = mid - 1;
+        } else {
+            // 锁定右边,移动左边界
+            left = mid + 1;
+        }
+    }
+    // 检查越界,是否找到
+    if (right &lt; 0 || nums[right] != target) {
+        return -1;
+    }
+    return right;
+}
+
+public int bsRight1(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left &lt; right) {
+        // 选右边中位数
+        int mid = left + ((right - left + 1) &gt;&gt; 1);
+        if (nums[mid] &lt;= target) {
+            // 小于移动左边界
+            // 上面选择的是右边中位数,所以这里不加一
+            // 等于则继续往右边寻找
+            left = mid;
+        } else {
+            // 移动右边界
+            right = mid - 1;
+        }
+    }
+
+    // 需要判断是否找到
+    return nums[right] == target ? right : -1;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><h3 id="找小于目标的最大值"><a href="#找小于目标的最大值" class="header-anchor">#</a> 找小于目标的最大值</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * 找小于目标的最大值
+ */
+public int bsLeftMax(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left &lt; right) {
+        // 选右边中位数
+        int mid = left + ((right - left + 1) &gt;&gt; 1);
+        if (nums[mid] &lt; target) {
+            // 当前值可能是目标值,继续往右边找
+            left = mid;
+        } else {
+            // 当前值不可能是目标值,想左边找
+            right = mid - 1;
+        }
+    }
+    // 防止所有数据都大于目标值
+    return nums[right] &lt; target ? right : -1;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="找大于目标的最小值"><a href="#找大于目标的最小值" class="header-anchor">#</a> 找大于目标的最小值</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * 找大于目标的最小值
+ */
+public int bsRightMin(int[] nums, int target) {
+    int left = 0, right = nums.length - 1;
+    while (left &lt; right) {
+        // 选右边中位数
+        int mid = left + ((right - left) &gt;&gt; 1);
+        if (nums[mid] &lt;= target) {
+            // 当前值不可能是目标,继续往右边找
+            left = mid + 1;
+        } else {
+            // 当前值可能是目标,继续往左边找
+            right = mid;
+        }
+    }
+    // 防止所有数据都小于目标值
+    return nums[right] &gt; target ? right : -1;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/db117/doc/edit/master/docs/algorithm/binarySearch.md" target="_blank" rel="noopener noreferrer">编辑文档！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">1/14/2022, 9:35:06 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/algorithm/" class="prev router-link-active">
+        算法
+      </a></span> <span class="next"><a href="/algorithm/常见算法.html">
+        常见算法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.5683d718.js" defer></script><script src="/assets/js/2.1ab7b5a1.js" defer></script><script src="/assets/js/10.884438a0.js" defer></script>
+  </body>
+</html>
