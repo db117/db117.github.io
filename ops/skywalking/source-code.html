@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>源码分析 | 大兵个人主页</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?61e2d16dac6a568e22f28ee4974c119a";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    <meta name="description" content="文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.74761522.css" as="style"><link rel="preload" href="/assets/js/app.23565821.js" as="script"><link rel="preload" href="/assets/js/2.4b952d44.js" as="script"><link rel="preload" href="/assets/js/92.50a8792b.js" as="script"><link rel="prefetch" href="/assets/js/10.818b673a.js"><link rel="prefetch" href="/assets/js/100.f50269b1.js"><link rel="prefetch" href="/assets/js/101.a682eece.js"><link rel="prefetch" href="/assets/js/102.dabd18a8.js"><link rel="prefetch" href="/assets/js/103.16ba8163.js"><link rel="prefetch" href="/assets/js/104.c4e9464e.js"><link rel="prefetch" href="/assets/js/105.3bca92a8.js"><link rel="prefetch" href="/assets/js/106.21d7fcd9.js"><link rel="prefetch" href="/assets/js/107.c3794841.js"><link rel="prefetch" href="/assets/js/108.5c7866fa.js"><link rel="prefetch" href="/assets/js/109.ada3a6ac.js"><link rel="prefetch" href="/assets/js/11.0250fc0e.js"><link rel="prefetch" href="/assets/js/110.9ee677ec.js"><link rel="prefetch" href="/assets/js/111.fbc166f4.js"><link rel="prefetch" href="/assets/js/112.d0b6f340.js"><link rel="prefetch" href="/assets/js/113.35fa8fff.js"><link rel="prefetch" href="/assets/js/114.397e7f91.js"><link rel="prefetch" href="/assets/js/115.20c792c9.js"><link rel="prefetch" href="/assets/js/116.0c03f8a5.js"><link rel="prefetch" href="/assets/js/117.11705516.js"><link rel="prefetch" href="/assets/js/118.070587d5.js"><link rel="prefetch" href="/assets/js/119.913c53f2.js"><link rel="prefetch" href="/assets/js/12.0b61044d.js"><link rel="prefetch" href="/assets/js/120.d427dda4.js"><link rel="prefetch" href="/assets/js/121.4e46b55a.js"><link rel="prefetch" href="/assets/js/122.d2583fbd.js"><link rel="prefetch" href="/assets/js/123.074efc54.js"><link rel="prefetch" href="/assets/js/124.184f7287.js"><link rel="prefetch" href="/assets/js/125.bd08eca1.js"><link rel="prefetch" href="/assets/js/126.9bbc7a7c.js"><link rel="prefetch" href="/assets/js/127.e59cd24c.js"><link rel="prefetch" href="/assets/js/128.2a07319a.js"><link rel="prefetch" href="/assets/js/129.da91e7df.js"><link rel="prefetch" href="/assets/js/13.9038dac4.js"><link rel="prefetch" href="/assets/js/130.61162fe6.js"><link rel="prefetch" href="/assets/js/131.3cf7433b.js"><link rel="prefetch" href="/assets/js/132.f612fbe6.js"><link rel="prefetch" href="/assets/js/14.6faeead9.js"><link rel="prefetch" href="/assets/js/15.8baf473d.js"><link rel="prefetch" href="/assets/js/16.d4761a9f.js"><link rel="prefetch" href="/assets/js/17.979c31c3.js"><link rel="prefetch" href="/assets/js/18.bb20e2f9.js"><link rel="prefetch" href="/assets/js/19.343ee95b.js"><link rel="prefetch" href="/assets/js/20.3d79f797.js"><link rel="prefetch" href="/assets/js/21.856ee0a7.js"><link rel="prefetch" href="/assets/js/22.280b8945.js"><link rel="prefetch" href="/assets/js/23.be574581.js"><link rel="prefetch" href="/assets/js/24.13571ee3.js"><link rel="prefetch" href="/assets/js/25.6022f27b.js"><link rel="prefetch" href="/assets/js/26.6925be86.js"><link rel="prefetch" href="/assets/js/27.733d7d24.js"><link rel="prefetch" href="/assets/js/28.c273fcd2.js"><link rel="prefetch" href="/assets/js/29.b90ff320.js"><link rel="prefetch" href="/assets/js/3.f55286c4.js"><link rel="prefetch" href="/assets/js/30.c49aaf5a.js"><link rel="prefetch" href="/assets/js/31.31022436.js"><link rel="prefetch" href="/assets/js/32.7fa65e7b.js"><link rel="prefetch" href="/assets/js/33.46b21cc5.js"><link rel="prefetch" href="/assets/js/34.c8ef24b4.js"><link rel="prefetch" href="/assets/js/35.cf378ecc.js"><link rel="prefetch" href="/assets/js/36.efc127da.js"><link rel="prefetch" href="/assets/js/37.cc1a03ec.js"><link rel="prefetch" href="/assets/js/38.16966eb1.js"><link rel="prefetch" href="/assets/js/39.57463c93.js"><link rel="prefetch" href="/assets/js/4.c43eafa6.js"><link rel="prefetch" href="/assets/js/40.850cd1e9.js"><link rel="prefetch" href="/assets/js/41.f06a1fc3.js"><link rel="prefetch" href="/assets/js/42.4cf0dc31.js"><link rel="prefetch" href="/assets/js/43.a61ec185.js"><link rel="prefetch" href="/assets/js/44.4792b4f8.js"><link rel="prefetch" href="/assets/js/45.9ddc4a4d.js"><link rel="prefetch" href="/assets/js/46.5af3ccf1.js"><link rel="prefetch" href="/assets/js/47.6ff071e7.js"><link rel="prefetch" href="/assets/js/48.e4ccab99.js"><link rel="prefetch" href="/assets/js/49.e85557b0.js"><link rel="prefetch" href="/assets/js/5.bed20588.js"><link rel="prefetch" href="/assets/js/50.f46d9e48.js"><link rel="prefetch" href="/assets/js/51.19d19fbe.js"><link rel="prefetch" href="/assets/js/52.53931088.js"><link rel="prefetch" href="/assets/js/53.5ac38154.js"><link rel="prefetch" href="/assets/js/54.230b867a.js"><link rel="prefetch" href="/assets/js/55.79f00bb8.js"><link rel="prefetch" href="/assets/js/56.ffdae2e4.js"><link rel="prefetch" href="/assets/js/57.c8479120.js"><link rel="prefetch" href="/assets/js/58.d8ce978f.js"><link rel="prefetch" href="/assets/js/59.614ed83a.js"><link rel="prefetch" href="/assets/js/6.55d2632e.js"><link rel="prefetch" href="/assets/js/60.3b95870a.js"><link rel="prefetch" href="/assets/js/61.aa3812c8.js"><link rel="prefetch" href="/assets/js/62.17e93c55.js"><link rel="prefetch" href="/assets/js/63.f309c2a4.js"><link rel="prefetch" href="/assets/js/64.21619c68.js"><link rel="prefetch" href="/assets/js/65.f6d04a84.js"><link rel="prefetch" href="/assets/js/66.6cbb9bda.js"><link rel="prefetch" href="/assets/js/67.5842aa2a.js"><link rel="prefetch" href="/assets/js/68.21e44ef7.js"><link rel="prefetch" href="/assets/js/69.a3555243.js"><link rel="prefetch" href="/assets/js/7.0baeb89a.js"><link rel="prefetch" href="/assets/js/70.8b449805.js"><link rel="prefetch" href="/assets/js/71.b7bfafd6.js"><link rel="prefetch" href="/assets/js/72.8799f205.js"><link rel="prefetch" href="/assets/js/73.cf821083.js"><link rel="prefetch" href="/assets/js/74.852a5ada.js"><link rel="prefetch" href="/assets/js/75.3f80b238.js"><link rel="prefetch" href="/assets/js/76.d5d04997.js"><link rel="prefetch" href="/assets/js/77.a6066e87.js"><link rel="prefetch" href="/assets/js/78.7070e5dc.js"><link rel="prefetch" href="/assets/js/79.299f1ab0.js"><link rel="prefetch" href="/assets/js/8.82782eb9.js"><link rel="prefetch" href="/assets/js/80.54b37ac6.js"><link rel="prefetch" href="/assets/js/81.b1a9c449.js"><link rel="prefetch" href="/assets/js/82.5c42b4db.js"><link rel="prefetch" href="/assets/js/83.dd654e46.js"><link rel="prefetch" href="/assets/js/84.98290e0e.js"><link rel="prefetch" href="/assets/js/85.7a79d13d.js"><link rel="prefetch" href="/assets/js/86.d8f8607c.js"><link rel="prefetch" href="/assets/js/87.e398c3a2.js"><link rel="prefetch" href="/assets/js/88.b0d26b85.js"><link rel="prefetch" href="/assets/js/89.77e3d8ce.js"><link rel="prefetch" href="/assets/js/9.c5539a3e.js"><link rel="prefetch" href="/assets/js/90.7b98492d.js"><link rel="prefetch" href="/assets/js/91.9e5d713c.js"><link rel="prefetch" href="/assets/js/93.da08f3c7.js"><link rel="prefetch" href="/assets/js/94.d5b2563e.js"><link rel="prefetch" href="/assets/js/95.01898067.js"><link rel="prefetch" href="/assets/js/96.d7267f54.js"><link rel="prefetch" href="/assets/js/97.f89d783f.js"><link rel="prefetch" href="/assets/js/98.a0496244.js"><link rel="prefetch" href="/assets/js/99.d6f200cc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.74761522.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大兵个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/ops/" class="nav-link router-link-active">
+  运维相关
+</a></div><div class="nav-item"><a href="/os/" class="nav-link">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/java/" class="nav-link">
+  java
+</a></div><div class="nav-item"><a href="/ops/" class="nav-link router-link-active">
+  运维相关
+</a></div><div class="nav-item"><a href="/os/" class="nav-link">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>运维相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/" aria-current="page" class="sidebar-link">运维相关</a></li><li><a href="/ops/Jenkins.html" class="sidebar-link">Jenkins</a></li><li><a href="/ops/supervisord.html" class="sidebar-link">supervisord使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/docker/" class="sidebar-link">docker</a></li><li><a href="/ops/docker/easyconnectInit.html" class="sidebar-link">深信服easyConnect在docker中进行透明代理</a></li><li><a href="/ops/docker/zabbix.html" class="sidebar-link">zabbix</a></li><li><a href="/ops/docker/常用命令.html" class="sidebar-link">常用命令</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>filebeat相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/filebeat/" class="sidebar-link">filebeat相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>k8s相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/k8s/" class="sidebar-link">k8s相关</a></li><li><a href="/ops/k8s/Kubectl.html" class="sidebar-link">Kubectl常用</a></li><li><a href="/ops/k8s/Minikube.html" class="sidebar-link">minikube常用</a></li><li><a href="/ops/k8s/资源配置.html" class="sidebar-link">资源配置</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>logstash</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/logstash/" class="sidebar-link">删除字段</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Nginx</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/nginx/" class="sidebar-link">Nginx</a></li><li><a href="/ops/nginx/Nginx 性能参数调优.html" class="sidebar-link">Nginx 性能参数调优</a></li><li><a href="/ops/nginx/Nginx安装.html" class="sidebar-link">编译与安装</a></li><li><a href="/ops/nginx/Nginx配置.html" class="sidebar-link">Nginx配置</a></li><li><a href="/ops/nginx/nginx-https.html" class="sidebar-link">配置文件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>prometheus</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/prometheus/" class="sidebar-link">prometheus</a></li><li><a href="/ops/prometheus/alertmanager.html" class="sidebar-link">alertmanager</a></li><li><a href="/ops/prometheus/kube-prometheus.html" class="sidebar-link">kube-prometheus</a></li><li><a href="/ops/prometheus/prometheus-operator.html" class="sidebar-link">prometheus-operator</a></li><li><a href="/ops/prometheus/query.html" class="sidebar-link">查询语法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>skywalking</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/ops/skywalking/" aria-current="page" class="sidebar-link">skywalking</a></li><li><a href="/ops/skywalking/client-config.html" class="sidebar-link">客户端配置</a></li><li><a href="/ops/skywalking/server-config.html" class="sidebar-link">服务配置</a></li><li><a href="/ops/skywalking/source-code.html" aria-current="page" class="active sidebar-link">源码分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ops/skywalking/source-code.html#" class="sidebar-link"></a></li></ul></li><li><a href="/ops/skywalking/ui.html" class="sidebar-link">UI详情</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="oap-server"><a href="#oap-server" class="header-anchor">#</a> oap server</h3> <blockquote><p><a href="https://github.com/apache/skywalking" target="_blank" rel="noopener noreferrer">apache/skywalking: APM, Application Performance Monitoring System (github.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://skywalking.apache.org/" target="_blank" rel="noopener noreferrer">Apache SkyWalking<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>服务端主流程源码分析。</p></blockquote> <h4 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>oap-server
+├── analyzer									数据分析模块
+│   ├── agent-analyzer				分析客户端发送的jvm，指标，trace 数据
+│   ├── event-analyzer				分析事件
+│   ├── log-analyzer					分析日志
+│   ├── meter-analyzer				分析特定指标
+│   └── pom.xml
+├── exporter
+│   ├── pom.xml
+│   └── src
+├── microbench								基准测试
+│   ├── pom.xml
+│   └── src
+├── oal-grammar								oal 相关
+│   ├── pom.xml
+│   └── src
+├── oal-rt
+│   ├── pom.xml
+│   └── src
+├── pom.xml
+├── server-alarm-plugin				告警插件
+│   ├── pom.xml
+│   └── src
+├── server-cluster-plugin			集群相关
+│   ├── cluster-consul-plugin
+│   ├── cluster-etcd-plugin
+│   ├── cluster-kubernetes-plugin
+│   ├── cluster-nacos-plugin
+│   ├── cluster-standalone-plugin
+│   ├── cluster-zookeeper-plugin
+│   └── pom.xml
+├── server-configuration			动态配置相关
+│   ├── configuration-api
+│   ├── configuration-apollo
+│   ├── configuration-consul
+│   ├── configuration-etcd
+│   ├── configuration-k8s-configmap
+│   ├── configuration-nacos
+│   ├── configuration-zookeeper
+│   ├── grpc-configuration-sync
+│   └── pom.xml
+├── server-core								核心模块
+│   ├── pom.xml
+│   └── src
+├── server-fetcher-plugin			数据接收模块，可以从别的地方获取数据
+│   ├── kafka-fetcher-plugin
+│   ├── pom.xml
+│   └── prometheus-fetcher-plugin
+├── server-health-checker			健康检查
+│   ├── pom.xml
+│   └── src
+├── server-library						
+│   ├── library-client									各种客户端
+│   ├── library-datacarrier-queue				一个数据队列
+│   ├── library-elasticsearch-client		es 客户端
+│   ├── library-module									module 核心模块
+│   ├── library-server									jetty 服务，grpc 服务
+│   ├── library-util										各种工具类
+│   └── pom.xml
+├── server-query-plugin
+│   ├── pom.xml
+│   └── query-graphql-plugin						前端 ui graphql查询接口
+├── server-receiver-plugin							各种接收数据
+│   ├── configuration-discovery-receiver-plugin
+│   ├── envoy-metrics-receiver-plugin
+│   ├── otel-receiver-plugin
+│   ├── pom.xml
+│   ├── receiver-proto
+│   ├── skywalking-browser-receiver-plugin
+│   ├── skywalking-clr-receiver-plugin
+│   ├── skywalking-ebpf-receiver-plugin
+│   ├── skywalking-event-receiver-plugin
+│   ├── skywalking-jvm-receiver-plugin
+│   ├── skywalking-log-recevier-plugin
+│   ├── skywalking-management-receiver-plugin
+│   ├── skywalking-mesh-receiver-plugin
+│   ├── skywalking-meter-receiver-plugin
+│   ├── skywalking-profile-receiver-plugin
+│   ├── skywalking-sharing-server-plugin
+│   ├── skywalking-trace-receiver-plugin
+│   ├── skywalking-zabbix-receiver-plugin
+│   └── zipkin-receiver-plugin
+├── server-starter										启动类
+│   ├── pom.xml
+│   └── src
+├── server-storage-plugin							数据存储模块
+│   ├── pom.xml
+│   ├── storage-elasticsearch-plugin
+│   ├── storage-influxdb-plugin
+│   ├── storage-iotdb-plugin
+│   ├── storage-jdbc-hikaricp-plugin
+│   ├── storage-tidb-plugin
+│   └── storage-zipkin-elasticsearch-plugin
+├── server-telemetry
+│   ├── pom.xml
+│   ├── telemetry-api
+│   └── telemetry-prometheus
+├── server-testing
+│   ├── pom.xml
+│   ├── server-testing.iml
+│   └── src
+└── server-tools
+    ├── pom.xml
+    └── profile-exporter
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br></div></div><h5 id="主要类以及接口"><a href="#主要类以及接口" class="header-anchor">#</a> 主要类以及接口</h5> <ul><li>OAPServerStartUp：启动类</li> <li>ApplicationConfigLoader：加载配置</li> <li>ModuleManager：加载各种模块</li> <li>ModuleProvider：提供服务类，主要通过 <code>prepare</code>，<code>start</code>，<code>notifyAfterCompleted</code>实现各种个功能</li> <li>ModuleConfig：各种插件配置类</li> <li>ISource：数据对象</li> <li>GRPCHandlerRegister：GRPC 处理器注册</li> <li>JettyHandlerRegister：jetty 处理器注册</li></ul> <h3 id="java-agent"><a href="#java-agent" class="header-anchor">#</a> Java agent</h3> <blockquote><p>Java 客户端,搜集各种数据发送到服务端。</p> <p><a href="https://github.com/apache/skywalking-java" target="_blank" rel="noopener noreferrer">apache/skywalking-java: The Java agent for Apache SkyWalking (github.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <h4 id="目录结构-2"><a href="#目录结构-2" class="header-anchor">#</a> 目录结构</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>.
+├── apm-application-toolkit  				一些工具类，仅仅是接口，具体实现在 apm-toolkit-activation 中
+├── apm-protocol										Protocol协议定义了各种数据格式，以及通信格式等
+├── apm-sniffer											核心代码
+│   ├── apm-agent										插件入口
+│   ├── apm-agent-core							核心代码
+│   ├── apm-sdk-plugin							所有插件的父项目，以及大部分插件
+│   ├── apm-test-tools							
+│   ├── apm-toolkit-activation			apm-application-toolkit 的具体实现
+│   ├── bootstrap-plugins
+│   ├── config
+│   ├── optional-plugins
+│   ├── optional-reporter-plugins
+├── changes													变更记录
+├── docs														文档
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h4 id="流程图"><a href="#流程图" class="header-anchor">#</a> 流程图</h4> <iframe id="embed_dom" name="embed_dom" frameborder="0" src="https://www.processon.com/embed/621347b66376897c8c8308a3" style="display:block;width:725px;height:245px;"></iframe> <h4 id="主要类"><a href="#主要类" class="header-anchor">#</a> 主要类</h4> <ul><li>SkyWalkingAgent：启动类</li> <li>Config：所有配置都在这个类中。</li> <li>BootService：所有服务的顶级接口</li> <li>TracingContext：核心类，主要用来创建 span</li> <li>GlobalIdGenerator：生成 <code>traceId</code> ，第一部分为<code>实例 id</code>，第二部分为<code>线程 id</code>，第三部分为时间戳（毫秒）+当前线程中的序列号[0,9999]</li> <li>AbstractSpan：各种插件使用</li></ul> <h2 id=""><a href="#" class="header-anchor">#</a></h2></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/db117/doc/edit/master/docs/ops/skywalking/source-code.md" target="_blank" rel="noopener noreferrer">编辑文档！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">3/30/2022, 7:54:32 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ops/skywalking/server-config.html" class="prev">
+        服务配置
+      </a></span> <span class="next"><a href="/ops/skywalking/ui.html">
+        UI详情
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.23565821.js" defer></script><script src="/assets/js/2.4b952d44.js" defer></script><script src="/assets/js/92.50a8792b.js" defer></script>
+  </body>
+</html>
