@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>java 时间工具 | 大兵个人主页</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?61e2d16dac6a568e22f28ee4974c119a";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    <meta name="description" content="文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.ce4411ba.css" as="style"><link rel="preload" href="/assets/js/app.9b6e55a5.js" as="script"><link rel="preload" href="/assets/js/2.48baf895.js" as="script"><link rel="preload" href="/assets/js/71.c0d2d81a.js" as="script"><link rel="prefetch" href="/assets/js/10.3f0a69e7.js"><link rel="prefetch" href="/assets/js/100.978148a3.js"><link rel="prefetch" href="/assets/js/101.5a54f82d.js"><link rel="prefetch" href="/assets/js/102.ad343a84.js"><link rel="prefetch" href="/assets/js/103.29d71f92.js"><link rel="prefetch" href="/assets/js/104.f0e67405.js"><link rel="prefetch" href="/assets/js/105.541b7697.js"><link rel="prefetch" href="/assets/js/106.9f68b1f4.js"><link rel="prefetch" href="/assets/js/107.7875c2da.js"><link rel="prefetch" href="/assets/js/108.9f2051a8.js"><link rel="prefetch" href="/assets/js/109.ea7f02ec.js"><link rel="prefetch" href="/assets/js/11.946fb038.js"><link rel="prefetch" href="/assets/js/110.b971edff.js"><link rel="prefetch" href="/assets/js/111.61db26ac.js"><link rel="prefetch" href="/assets/js/112.fc768a64.js"><link rel="prefetch" href="/assets/js/113.afdad1d4.js"><link rel="prefetch" href="/assets/js/114.95717be3.js"><link rel="prefetch" href="/assets/js/115.85dac732.js"><link rel="prefetch" href="/assets/js/116.589775e7.js"><link rel="prefetch" href="/assets/js/117.df59b531.js"><link rel="prefetch" href="/assets/js/118.a3d908c4.js"><link rel="prefetch" href="/assets/js/119.9ee55aab.js"><link rel="prefetch" href="/assets/js/12.472a5136.js"><link rel="prefetch" href="/assets/js/120.bc40df86.js"><link rel="prefetch" href="/assets/js/121.6b909c54.js"><link rel="prefetch" href="/assets/js/122.8b3933cb.js"><link rel="prefetch" href="/assets/js/123.e4011bca.js"><link rel="prefetch" href="/assets/js/124.d7c7e2b4.js"><link rel="prefetch" href="/assets/js/125.c04acd1c.js"><link rel="prefetch" href="/assets/js/126.e2731a97.js"><link rel="prefetch" href="/assets/js/127.3b1058ec.js"><link rel="prefetch" href="/assets/js/128.6409031a.js"><link rel="prefetch" href="/assets/js/129.720296d8.js"><link rel="prefetch" href="/assets/js/13.265fc98c.js"><link rel="prefetch" href="/assets/js/130.16e0d191.js"><link rel="prefetch" href="/assets/js/131.abfc3846.js"><link rel="prefetch" href="/assets/js/132.a883b82a.js"><link rel="prefetch" href="/assets/js/133.f172f19b.js"><link rel="prefetch" href="/assets/js/134.e3b502df.js"><link rel="prefetch" href="/assets/js/135.5bd3b79c.js"><link rel="prefetch" href="/assets/js/136.5cd4903b.js"><link rel="prefetch" href="/assets/js/137.1d5ed4af.js"><link rel="prefetch" href="/assets/js/138.89c0192c.js"><link rel="prefetch" href="/assets/js/139.324f6ace.js"><link rel="prefetch" href="/assets/js/14.5c30dbcc.js"><link rel="prefetch" href="/assets/js/140.06a072cd.js"><link rel="prefetch" href="/assets/js/141.f219cc76.js"><link rel="prefetch" href="/assets/js/15.7602951a.js"><link rel="prefetch" href="/assets/js/16.149b65d0.js"><link rel="prefetch" href="/assets/js/17.cd804eb0.js"><link rel="prefetch" href="/assets/js/18.a1a8e68d.js"><link rel="prefetch" href="/assets/js/19.42e155b3.js"><link rel="prefetch" href="/assets/js/20.ed58723e.js"><link rel="prefetch" href="/assets/js/21.f10a4d1d.js"><link rel="prefetch" href="/assets/js/22.d097a4dd.js"><link rel="prefetch" href="/assets/js/23.d5f916d3.js"><link rel="prefetch" href="/assets/js/24.a1117b00.js"><link rel="prefetch" href="/assets/js/25.01dd824c.js"><link rel="prefetch" href="/assets/js/26.d3055a6b.js"><link rel="prefetch" href="/assets/js/27.52a421b1.js"><link rel="prefetch" href="/assets/js/28.96be8528.js"><link rel="prefetch" href="/assets/js/29.f2127b5a.js"><link rel="prefetch" href="/assets/js/3.2e9ed2a4.js"><link rel="prefetch" href="/assets/js/30.9a40e1da.js"><link rel="prefetch" href="/assets/js/31.9afd7159.js"><link rel="prefetch" href="/assets/js/32.5205a1f9.js"><link rel="prefetch" href="/assets/js/33.c62242a2.js"><link rel="prefetch" href="/assets/js/34.78242eda.js"><link rel="prefetch" href="/assets/js/35.78c64569.js"><link rel="prefetch" href="/assets/js/36.253417bf.js"><link rel="prefetch" href="/assets/js/37.ba5d41ad.js"><link rel="prefetch" href="/assets/js/38.0c5c3a34.js"><link rel="prefetch" href="/assets/js/39.abb3f706.js"><link rel="prefetch" href="/assets/js/4.3b514988.js"><link rel="prefetch" href="/assets/js/40.2917b5d9.js"><link rel="prefetch" href="/assets/js/41.4bd5367d.js"><link rel="prefetch" href="/assets/js/42.11c450db.js"><link rel="prefetch" href="/assets/js/43.ff4852c8.js"><link rel="prefetch" href="/assets/js/44.a1c24c1a.js"><link rel="prefetch" href="/assets/js/45.1073db4c.js"><link rel="prefetch" href="/assets/js/46.bd6066dc.js"><link rel="prefetch" href="/assets/js/47.eaeee876.js"><link rel="prefetch" href="/assets/js/48.ce3f4a7b.js"><link rel="prefetch" href="/assets/js/49.773b2987.js"><link rel="prefetch" href="/assets/js/5.1acc3f13.js"><link rel="prefetch" href="/assets/js/50.b76f65c2.js"><link rel="prefetch" href="/assets/js/51.ac9fbafb.js"><link rel="prefetch" href="/assets/js/52.4ed74c8c.js"><link rel="prefetch" href="/assets/js/53.f920b711.js"><link rel="prefetch" href="/assets/js/54.9074598d.js"><link rel="prefetch" href="/assets/js/55.2b434998.js"><link rel="prefetch" href="/assets/js/56.6b8ee860.js"><link rel="prefetch" href="/assets/js/57.6e6d41a2.js"><link rel="prefetch" href="/assets/js/58.d4c9940a.js"><link rel="prefetch" href="/assets/js/59.9a93edc3.js"><link rel="prefetch" href="/assets/js/6.346df849.js"><link rel="prefetch" href="/assets/js/60.6087b750.js"><link rel="prefetch" href="/assets/js/61.1960287c.js"><link rel="prefetch" href="/assets/js/62.6f113f1c.js"><link rel="prefetch" href="/assets/js/63.4670e056.js"><link rel="prefetch" href="/assets/js/64.6444d309.js"><link rel="prefetch" href="/assets/js/65.bfb2e71f.js"><link rel="prefetch" href="/assets/js/66.dc29f2e2.js"><link rel="prefetch" href="/assets/js/67.b0b3d400.js"><link rel="prefetch" href="/assets/js/68.0bff1048.js"><link rel="prefetch" href="/assets/js/69.9e90a37d.js"><link rel="prefetch" href="/assets/js/7.5bc05ea9.js"><link rel="prefetch" href="/assets/js/70.27b34e7b.js"><link rel="prefetch" href="/assets/js/72.5ab5ba8a.js"><link rel="prefetch" href="/assets/js/73.b38eadc8.js"><link rel="prefetch" href="/assets/js/74.06df94db.js"><link rel="prefetch" href="/assets/js/75.0dd08bb5.js"><link rel="prefetch" href="/assets/js/76.e33b622a.js"><link rel="prefetch" href="/assets/js/77.01cfeaac.js"><link rel="prefetch" href="/assets/js/78.8642a2a7.js"><link rel="prefetch" href="/assets/js/79.03936c9f.js"><link rel="prefetch" href="/assets/js/8.5e8a67c9.js"><link rel="prefetch" href="/assets/js/80.44f98a3f.js"><link rel="prefetch" href="/assets/js/81.4554acbc.js"><link rel="prefetch" href="/assets/js/82.1a238753.js"><link rel="prefetch" href="/assets/js/83.c45770c8.js"><link rel="prefetch" href="/assets/js/84.5bc22879.js"><link rel="prefetch" href="/assets/js/85.c1f46970.js"><link rel="prefetch" href="/assets/js/86.ec7a3185.js"><link rel="prefetch" href="/assets/js/87.dcaf5c3f.js"><link rel="prefetch" href="/assets/js/88.51af51e3.js"><link rel="prefetch" href="/assets/js/89.72cf4e58.js"><link rel="prefetch" href="/assets/js/9.45399cb6.js"><link rel="prefetch" href="/assets/js/90.247c6b7f.js"><link rel="prefetch" href="/assets/js/91.a6dd40ff.js"><link rel="prefetch" href="/assets/js/92.6a2f7039.js"><link rel="prefetch" href="/assets/js/93.f5aa1758.js"><link rel="prefetch" href="/assets/js/94.66480a3f.js"><link rel="prefetch" href="/assets/js/95.7215e277.js"><link rel="prefetch" href="/assets/js/96.0ba553e1.js"><link rel="prefetch" href="/assets/js/97.aa317d74.js"><link rel="prefetch" href="/assets/js/98.260ec7d8.js"><link rel="prefetch" href="/assets/js/99.cc2cb63d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ce4411ba.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">大兵个人主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/java/" class="nav-link router-link-active">
+  java
+</a></div><div class="nav-item"><a href="/ops/" class="nav-link">
+  运维相关
+</a></div><div class="nav-item"><a href="/os/" class="nav-link">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  导航
+</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法
+</a></div><div class="nav-item"><a href="/database/" class="nav-link">
+  数据库
+</a></div><div class="nav-item"><a href="/java/" class="nav-link router-link-active">
+  java
+</a></div><div class="nav-item"><a href="/ops/" class="nav-link">
+  运维相关
+</a></div><div class="nav-item"><a href="/os/" class="nav-link">
+  系统相关
+</a></div><div class="nav-item"><a href="/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="/util/" class="nav-link">
+  工具
+</a></div> <a href="https://github.com/db117/doc" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>java</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/" aria-current="page" class="sidebar-link">java</a></li><li><a href="/java/JMH基准测试.html" class="sidebar-link">JMH基准测试</a></li><li><a href="/java/MyBatis.html" class="sidebar-link">MyBatis</a></li><li><a href="/java/jdk util.html" class="sidebar-link">jdk工具</a></li><li><a href="/java/jdk源码编译.html" class="sidebar-link">jdk源码编译</a></li><li><a href="/java/线上问题查找.html" class="sidebar-link">线上问题分析</a></li><li><a href="/java/集合.html" class="sidebar-link">java集合</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JVM</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/JVM/JVM参数.html" class="sidebar-link">JVM参数</a></li><li><a href="/java/JVM/jvm远程访问.html" class="sidebar-link">java开启远程访问</a></li><li><a href="/java/JVM/synchronized.html" class="sidebar-link">synchronized</a></li><li><a href="/java/JVM/垃圾回收.html" class="sidebar-link">垃圾回收</a></li><li><a href="/java/JVM/对象相关.html" class="sidebar-link">对象相关</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>并发包</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/concurrent/" class="sidebar-link">并发包</a></li><li><a href="/java/concurrent/AbstractQueuedSynchronizer.html" class="sidebar-link">AbstractQueuedSynchronizer相关</a></li><li><a href="/java/concurrent/ThreadPool.html" class="sidebar-link">线程池</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>other</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/other/bytebuddy.html" class="sidebar-link">byte-buddy 简单使用</a></li><li><a href="/java/other/excel import.html" class="sidebar-link">大量Excel导入</a></li><li><a href="/java/other/jackjson.html" class="sidebar-link">jackson常见操作</a></li><li><a href="/java/other/kafak.html" class="sidebar-link">kafka</a></li><li><a href="/java/other/maven.html" class="sidebar-link">maven</a></li><li><a href="/java/other/rocket.html" class="sidebar-link">rocketMQ</a></li><li><a href="/java/other/string support switch.html" class="sidebar-link">源码</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>spring相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/spring/" class="sidebar-link">spring相关</a></li><li><a href="/java/spring/JdbcTemplate.html" class="sidebar-link">JdbcTemplate</a></li><li><a href="/java/spring/Spring Bean接口.html" class="sidebar-link">spring Bean接口</a></li><li><a href="/java/spring/Spring-aop.html" class="sidebar-link">spring-aop</a></li><li><a href="/java/spring/SpringMVC中获取request.html" class="sidebar-link">SpringMVC中获取request</a></li><li><a href="/java/spring/Spring扩展接口即执行流程.html" class="sidebar-link">Spring扩展接口即执行流程</a></li><li><a href="/java/spring/actuator.html" class="sidebar-link">Spring Boot - Actuator</a></li><li><a href="/java/spring/error.html" class="sidebar-link">常见异常</a></li><li><a href="/java/spring/gateway.html" class="sidebar-link">gateway</a></li><li><a href="/java/spring/spring-boot启动流程.html" class="sidebar-link">spring-boot启动流程</a></li><li><a href="/java/spring/spring-webflux.html" class="sidebar-link">spring-webflux</a></li><li><a href="/java/spring/流程图合集.html" class="sidebar-link">流程图</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>spring-cloud</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/spring-cloud/" class="sidebar-link">spring-cloud</a></li><li><a href="/java/spring-cloud/context.html" class="sidebar-link">spring-cloud-context 详细源码</a></li><li><a href="/java/spring-cloud/gateway.html" class="sidebar-link">简介</a></li><li><a href="/java/spring-cloud/openfeign.html" class="sidebar-link">spring-cloud-openfeign</a></li><li><a href="/java/spring-cloud/sentinel.html" class="sidebar-link">sentinel</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>util</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/util/arthas.html" class="sidebar-link">arthas 诊断工具</a></li><li><a href="/java/util/dateUtil.html" aria-current="page" class="active sidebar-link">java 时间工具</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="时间格式对照表"><a href="#时间格式对照表" class="header-anchor">#</a> 时间格式对照表</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>	Symbol  Meaning                     Presentation      Examples
+   ------  -------                     ------------      -------
+    G       era                         text              AD; Anno Domini; A
+    u       year                        year              2004; 04
+    y       year-of-era                 year              2004; 04
+    D       day-of-year                 number            189
+    M/L     month-of-year               number/text       7; 07; Jul; July; J
+    d       day-of-month                number            10
+ 
+    Q/q     quarter-of-year             number/text       3; 03; Q3; 3rd quarter
+    Y       week-based-year             year              1996; 96
+    w       week-of-week-based-year     number            27
+    W       week-of-month               number            4
+    E       day-of-week                 text              Tue; Tuesday; T
+    e/c     localized day-of-week       number/text       2; 02; Tue; Tuesday; T
+    F       week-of-month               number            3
+ 
+    a       am-pm-of-day                text              PM
+    h       clock-hour-of-am-pm (1-12)  number            12
+    K       hour-of-am-pm (0-11)        number            0
+    k       clock-hour-of-am-pm (1-24)  number            0
+ 
+    H       hour-of-day (0-23)          number            0
+    m       minute-of-hour              number            30
+    s       second-of-minute            number            55
+    S       fraction-of-second          fraction          978
+    A       milli-of-day                number            1234
+    n       nano-of-second              number            987654321
+    N       nano-of-day                 number            1234000000
+ 
+    V       time-zone ID                zone-id           America/Los_Angeles; Z; -08:30
+    z       time-zone name              zone-name         Pacific Standard Time; PST
+    O       localized zone-offset       offset-O          GMT+8; GMT+08:00; UTC-08:00;
+    X       zone-offset 'Z' for zero    offset-X          Z; -08; -0830; -08:30; -083015; -08:30:15;
+    x       zone-offset                 offset-x          +0000; -08; -0830; -08:30; -083015; -08:30:15;
+    Z       zone-offset                 offset-Z          +0000; -0800; -08:00;
+ 
+    p       pad next                    pad modifier      1
+ 
+    '       escape for text             delimiter
+    ''      single quote                literal           '
+    [       optional section start
+    ]       optional section end
+    #       reserved for future use
+    {       reserved for future use
+    }       reserved for future use
+  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h3 id="datetimeformatter相关"><a href="#datetimeformatter相关" class="header-anchor">#</a> DateTimeFormatter相关</h3> <p>常规使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>复杂格式实现</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 时间格式非常规
+new DateTimeFormatterBuilder()
+            .appendValue(YEAR, 4)
+            .appendLiteral('0')// 针对带数字的只能用这种方式
+            .appendValue(MONTH_OF_YEAR, 2)
+            .toFormatter()
+            
+
+// 202212 -&gt; 20221201
+new DateTimeFormatterBuilder()
+            .appendValue(YEAR, 4)
+            .appendValue(MONTH_OF_YEAR, 2)
+            .parseDefaulting(ChronoField.DAY_OF_MONTH, 1)// 需要带默认值的
+            .toFormatter();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/db117/doc/edit/master/docs/java/util/dateUtil.md" target="_blank" rel="noopener noreferrer">编辑文档！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">12/6/2022, 9:17:08 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/java/util/arthas.html" class="prev">
+        arthas 诊断工具
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.9b6e55a5.js" defer></script><script src="/assets/js/2.48baf895.js" defer></script><script src="/assets/js/71.c0d2d81a.js" defer></script>
+  </body>
+</html>
