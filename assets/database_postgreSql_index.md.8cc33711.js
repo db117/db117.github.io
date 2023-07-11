@@ -1,0 +1,24 @@
+import{_ as s,o as a,c as n,U as e}from"./chunks/framework.190aac23.js";const u=JSON.parse('{"title":"PostgreSQL","description":"","frontmatter":{"title":"PostgreSQL"},"headers":[],"relativePath":"database/postgreSql/index.md","filePath":"database/postgreSql/index.md","lastUpdated":1689063504000}'),l={name:"database/postgreSql/index.md"},o=e(`<h4 id="不存在则插入-存在则更新" tabindex="-1">不存在则插入/存在则更新 <a class="header-anchor" href="#不存在则插入-存在则更新" aria-label="Permalink to &quot;不存在则插入/存在则更新&quot;">​</a></h4><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">-- 1、主键id不重复就插入，否则更新</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into 表名称 (字段a, 字段b, ...)</span></span>
+<span class="line"><span style="color:#A6ACCD;">            values</span></span>
+<span class="line"><span style="color:#A6ACCD;">            (value_a, value_b, ...)</span></span>
+<span class="line"><span style="color:#A6ACCD;">            on conflict (主键id)</span></span>
+<span class="line"><span style="color:#A6ACCD;">            do</span></span>
+<span class="line"><span style="color:#A6ACCD;">            update set ...略</span></span>
+<span class="line"><span style="color:#A6ACCD;">            -- 也可以直接 DO NOTHING; 什么都不做</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">-- 2、直接绑定主键名称，主键重复则更新</span></span>
+<span class="line"><span style="color:#A6ACCD;">insert into 表名称 (字段a, 字段b, ...)</span></span>
+<span class="line"><span style="color:#A6ACCD;">            values</span></span>
+<span class="line"><span style="color:#A6ACCD;">            (value_a, value_b, ...)</span></span>
+<span class="line"><span style="color:#A6ACCD;">            on conflict on constraint this_table_key</span></span>
+<span class="line"><span style="color:#A6ACCD;">            do</span></span>
+<span class="line"><span style="color:#A6ACCD;">            update set ...略</span></span></code></pre></div><h4 id="唯一主键-null-值唯一" tabindex="-1">唯一主键 null 值唯一 <a class="header-anchor" href="#唯一主键-null-值唯一" aria-label="Permalink to &quot;唯一主键 null 值唯一&quot;">​</a></h4><p>以前唯一主键对于有 null 都认为是不同的值，在 15 版本中添加了新功能可以解决这个问题。<a href="https://www.postgresql.org/docs/15/release-15.html#id-1.11.6.5.5.3.4" target="_blank" rel="noreferrer">https://www.postgresql.org/docs/15/release-15.html#id-1.11.6.5.5.3.4</a></p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">-- 添加唯一约束</span></span>
+<span class="line"><span style="color:#A6ACCD;">ALTER TABLE favorites</span></span>
+<span class="line"><span style="color:#A6ACCD;">ADD CONSTRAINT favo_uni UNIQUE NULLS NOT DISTINCT (user_id, menu_id, recipe_id);</span></span>
+<span class="line"><span style="color:#A6ACCD;"></span></span>
+<span class="line"><span style="color:#A6ACCD;">-- 添加联合主键</span></span>
+<span class="line"><span style="color:#A6ACCD;">CREATE UNIQUE INDEX favo_uni_idx</span></span>
+<span class="line"><span style="color:#A6ACCD;">ON favorites (user_id, menu_id, recipe_id) NULLS NOT DISTINCT;</span></span></code></pre></div><h4 id="复制表结构" tabindex="-1">复制表结构 <a class="header-anchor" href="#复制表结构" aria-label="Permalink to &quot;复制表结构&quot;">​</a></h4><p><code>INCLUDING</code> 关键字后面可以跟多个参数，以指定需要复制的旧表的哪些特性。以下是常用的参数以及它们的含义：</p><ul><li><code>ALL</code>：复制所有特性。</li><li><code>DEFAULTS</code>：复制默认值。</li><li><code>CONSTRAINTS</code>：复制所有约束。</li><li><code>INDEXES</code>：复制所有索引。</li><li><code>TRIGGERS</code>：复制所有触发器。</li><li><code>STORAGE</code>：复制存储属性、统计信息和填充因子。</li><li><code>COMMENTS</code>：复制注释。</li><li><code>STATISTICS</code>：复制统计信息。</li><li><code>COLLATION</code>：复制排序规则。</li></ul><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;"># 复制表 table_name </span></span>
+<span class="line"><span style="color:#A6ACCD;">create table if not exists table_name_copy (like table_name including all );</span></span></code></pre></div><h4 id="查看当前用户是否有某个角色" tabindex="-1">查看当前用户是否有某个角色 <a class="header-anchor" href="#查看当前用户是否有某个角色" aria-label="Permalink to &quot;查看当前用户是否有某个角色&quot;">​</a></h4><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;"># 查看当前用户是否有 pg_monitor 角色</span></span>
+<span class="line"><span style="color:#A6ACCD;">SELECT pg_has_role(current_user, &#39;pg_monitor&#39;, &#39;member&#39;);</span></span></code></pre></div>`,11),p=[o];function t(c,i,r,d,C,A){return a(),n("div",null,p)}const h=s(l,[["render",t]]);export{u as __pageData,h as default};
