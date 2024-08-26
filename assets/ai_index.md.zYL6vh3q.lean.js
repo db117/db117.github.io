@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a5 as r}from"./chunks/framework.gVONBIN7.js";const m=JSON.parse('{"title":"AI","description":"","frontmatter":{"title":"AI"},"headers":[],"relativePath":"ai/index.md","filePath":"ai/index.md"}'),o={name:"ai/index.md"},i=r("",3),c=[i];function n(s,_,d,h,l,p){return t(),a("div",null,c)}const u=e(o,[["render",n]]);export{m as __pageData,u as default};
