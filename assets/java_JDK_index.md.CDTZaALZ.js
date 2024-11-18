@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.wJagV7l8.js";const m=JSON.parse('{"title":"JDK 相关","description":"","frontmatter":{"title":"JDK 相关"},"headers":[],"relativePath":"java/JDK/index.md","filePath":"java/JDK/index.md"}'),n={name:"java/JDK/index.md"};function r(o,s,c,i,d,p){return t(),a("div")}const f=e(n,[["render",r]]);export{m as __pageData,f as default};
