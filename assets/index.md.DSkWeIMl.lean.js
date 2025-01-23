@@ -1,0 +1,1 @@
+import{_ as r,c as a,ah as t,o}from"./chunks/framework.QVDyGnW_.js";const p=JSON.parse('{"title":"导航","description":"","frontmatter":{"title":"导航"},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"};function l(h,e,s,f,i,c){return o(),a("div",null,e[0]||(e[0]=[t("",27)]))}const b=r(n,[["render",l]]);export{p as __pageData,b as default};
