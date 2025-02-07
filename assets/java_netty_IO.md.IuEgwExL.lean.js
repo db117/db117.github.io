@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a}from"./chunks/framework.QVDyGnW_.js";const m=JSON.parse('{"title":"netty 内存模型","description":"","frontmatter":{"title":"netty 内存模型"},"headers":[],"relativePath":"java/netty/IO.md","filePath":"java/netty/IO.md"}'),n={name:"java/netty/IO.md"};function r(o,s,c,i,p,_){return a(),e("div")}const f=t(n,[["render",r]]);export{m as __pageData,f as default};
