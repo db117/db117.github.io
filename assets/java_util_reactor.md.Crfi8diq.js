@@ -1,0 +1,31 @@
+import{_ as a,c as n,o as p,ah as t}from"./chunks/framework.1mMYEF3_.js";const h=JSON.parse('{"title":"Reactor","description":"","frontmatter":{"title":"Reactor"},"headers":[],"relativePath":"java/util/reactor.md","filePath":"java/util/reactor.md"}'),e={name:"java/util/reactor.md"};function l(i,s,r,c,o,u){return p(),n("div",null,[...s[0]||(s[0]=[t(`<blockquote><p><a href="https://projectreactor.io/" target="_blank" rel="noreferrer">https://projectreactor.io/</a></p><p><a href="https://github.com/reactor" target="_blank" rel="noreferrer">https://github.com/reactor</a></p></blockquote><h2 id="创建序列" tabindex="-1">创建序列 <a class="header-anchor" href="#创建序列" aria-label="Permalink to &quot;创建序列&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span># 生成固定的序列</span></span>
+<span class="line"><span>Flux.just(1, 2, 3);</span></span>
+<span class="line"><span>Flux.range(1, 12);</span></span>
+<span class="line"><span>Flux.from();</span></span>
+<span class="line"><span>Flux.fromArray();</span></span>
+<span class="line"><span>Flux.fromStream();</span></span>
+<span class="line"><span>Flux.fromIterable();</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 从 1 生成到 10</span></span>
+<span class="line"><span>Flux.&lt;Integer, Integer&gt;generate(() -&gt; 1, (s, o) -&gt; {</span></span>
+<span class="line"><span>			if (s &lt; 11) {</span></span>
+<span class="line"><span>				o.next(s);</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>			else {</span></span>
+<span class="line"><span>				o.complete();</span></span>
+<span class="line"><span>			}</span></span>
+<span class="line"><span>			return s + 1;</span></span>
+<span class="line"><span>		});</span></span>
+<span class="line"><span>		</span></span>
+<span class="line"><span># 按照时间间隔生成</span></span>
+<span class="line"><span>Flux.interval(Duration.ofMillis(100), Duration.ofMillis(100), Schedulers.newSingle(&quot;interval-test&quot;))</span></span>
+<span class="line"><span>      .take(5, false)</span></span>
+<span class="line"><span>      .map(v -&gt; System.currentTimeMillis())</span></span>
+<span class="line"><span>      .subscribe(ts);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 通过回到方法生成</span></span>
+<span class="line"><span>Flux.create(sink -&gt; {</span></span>
+<span class="line"><span>			    sink.next(&quot;1&quot;);</span></span>
+<span class="line"><span>			    sink.next(&quot;2&quot;);</span></span>
+<span class="line"><span>			    sink.complete();</span></span>
+<span class="line"><span>		    });</span></span></code></pre></div>`,3)])])}const m=a(e,[["render",l]]);export{h as __pageData,m as default};
