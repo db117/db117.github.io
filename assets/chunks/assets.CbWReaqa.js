@@ -1,0 +1,1 @@
+var e=`/images/mcp-design-flow.png`;export{e as t};

@@ -1,0 +1,32 @@
+import{gt as e,nt as t,s as n,tt as r}from"./chunks/framework.BqU7tCwc.js";var i=JSON.parse(`{"title":"Elasticsearch","description":"","frontmatter":{"title":"Elasticsearch"},"headers":[],"relativePath":"infrastructure/database/es/index.md","filePath":"infrastructure/database/es/index.md","lastUpdated":1784604435000}`),a={name:`infrastructure/database/es/index.md`};function o(n,i,a,o,s,c){return e(),r(`div`,null,[...i[0]||=[t(`<blockquote><p>Elasticsearch是一种分布式文档存储。Elasticsearch不是将信息存储为列数据行，而是存储已序列化为JSON文档的复杂数据结构。当集群中有多个Elasticsearch节点时，存储的文档分布在整个集群中，可以从任何节点立即访问。</p><p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html" target="_blank" rel="noreferrer">Elasticsearch Doc </a></p></blockquote><h3 id="数据类型" tabindex="-1">数据类型 <a class="header-anchor" href="#数据类型" aria-label="Permalink to “数据类型”">​</a></h3><h3 id="常见操作" tabindex="-1">常见操作 <a class="header-anchor" href="#常见操作" aria-label="Permalink to “常见操作”">​</a></h3><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span># 创建索引API创建带有显式映射的新索引</span></span>
+<span class="line"><span>PUT /my-index-000001</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  &quot;mappings&quot;: {</span></span>
+<span class="line"><span>    &quot;properties&quot;: {</span></span>
+<span class="line"><span>      &quot;age&quot;:    { &quot;type&quot;: &quot;integer&quot; },  </span></span>
+<span class="line"><span>      &quot;email&quot;:  { &quot;type&quot;: &quot;keyword&quot;  }, </span></span>
+<span class="line"><span>      &quot;name&quot;:   { &quot;type&quot;: &quot;text&quot;  }     </span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 修改 mapping</span></span>
+<span class="line"><span>PUT /my-index-000001/_mapping</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  &quot;properties&quot;: {</span></span>
+<span class="line"><span>    &quot;employee-id&quot;: {</span></span>
+<span class="line"><span>      &quot;type&quot;: &quot;keyword&quot;,</span></span>
+<span class="line"><span>      &quot;index&quot;: false</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 修改配置</span></span>
+<span class="line"><span>PUT my-index-000001</span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  &quot;settings&quot;: {</span></span>
+<span class="line"><span>    &quot;index&quot;:{</span></span>
+<span class="line"><span>      &quot;mode&quot;:&quot;standard&quot; </span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span></code></pre></div>`,4)]])}var s=n(a,[[`render`,o]]);export{i as __pageData,s as default};
