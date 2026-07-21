@@ -1,0 +1,14 @@
+import{gt as e,nt as t,s as n,tt as r}from"./chunks/framework.BqU7tCwc.js";var i=JSON.parse(`{"title":"权限相关","description":"","frontmatter":{"title":"权限相关"},"headers":[],"relativePath":"infrastructure/database/sqlserver/permission.md","filePath":"infrastructure/database/sqlserver/permission.md","lastUpdated":1784620663000}`),a={name:`infrastructure/database/sqlserver/permission.md`};function o(n,i,a,o,s,c){return e(),r(`div`,null,[...i[0]||=[t(`<h2 id="备忘单" tabindex="-1">备忘单 <a class="header-anchor" href="#备忘单" aria-label="Permalink to “备忘单”">​</a></h2><h3 id="授予权限" tabindex="-1">授予权限 <a class="header-anchor" href="#授予权限" aria-label="Permalink to “授予权限”">​</a></h3><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>-- 把Student表查询权限授予userName</span></span>
+<span class="line"><span>GRANT SELECT ON Student TO userName;</span></span>
+<span class="line"><span>-- 把Student表全部权限授予userName</span></span>
+<span class="line"><span>GRANT ALL ON Student TO userName;</span></span>
+<span class="line"><span>-- 把Student表查询权限授予全部用户</span></span>
+<span class="line"><span>GRANT SELECT ON Student TO PUBLIC;</span></span>
+<span class="line"><span>-- 把Student表name,age,sex字段的更新权限授予userName.授予用户更新多列的权限</span></span>
+<span class="line"><span>GRANT UPDATE(name,age,sex) ON  Student TO userName;</span></span>
+<span class="line"><span>-- 把对表Student的INSERT权限授予userName用户，并允许他再将此权限授予其他用户.</span></span>
+<span class="line"><span>GRANT INSERT  ON  Student TO userName WITH GRANT OPTION;</span></span></code></pre></div><h3 id="回收权限" tabindex="-1">回收权限 <a class="header-anchor" href="#回收权限" aria-label="Permalink to “回收权限”">​</a></h3><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>-- 回收userName用户对Student表的查询权限</span></span>
+<span class="line"><span>REVOKE SELECT ON Student FROM userName;</span></span>
+<span class="line"><span>-- 级联回收user1，user2，user3用户对Student表的查询权限</span></span>
+<span class="line"><span>-- 将user1的select权限回收，同时也将user2，user3的select权限回收，前提是user2，user3的select权限是user1授予的.</span></span>
+<span class="line"><span>REVOKE SELECT ON Student FROM userName CASCADE;</span></span></code></pre></div>`,5)]])}var s=n(a,[[`render`,o]]);export{i as __pageData,s as default};
