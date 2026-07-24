@@ -1,0 +1,15 @@
+import{gt as e,nt as t,s as n,tt as r}from"./chunks/framework.BqU7tCwc.js";var i=JSON.parse(`{"title":"wsl","description":"","frontmatter":{"title":"wsl"},"headers":[],"relativePath":"infrastructure/os/windows/wsl.md","filePath":"infrastructure/os/windows/wsl.md","lastUpdated":1784887501000}`),a={name:`infrastructure/os/windows/wsl.md`};function o(n,i,a,o,s,c){return e(),r(`div`,null,[...i[0]||=[t(`<h4 id="wsl2-参考的对象类型不支持尝试的操作" tabindex="-1">WSL2 参考的对象类型不支持尝试的操作 <a class="header-anchor" href="#wsl2-参考的对象类型不支持尝试的操作" aria-label="Permalink to “WSL2  参考的对象类型不支持尝试的操作”">​</a></h4><p>在管理员模式下运行命令后重启即可</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>netsh winsock reset</span></span></code></pre></div><p>在windows资源管理器打开wsl文件</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span>cd /home</span></span>
+<span class="line"><span>explorer.exe .</span></span></code></pre></div><h3 id="wsl2-配置文件" tabindex="-1">wsl2 配置文件 <a class="header-anchor" href="#wsl2-配置文件" aria-label="Permalink to “wsl2 配置文件”">​</a></h3><blockquote><p><a href="https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig" target="_blank" rel="noreferrer">Advanced settings configuration in WSL | Microsoft Learn</a></p></blockquote><p>路径位置<code>C:\\Users\\&lt;UserName&gt;\\.wslconfig</code>，如果找不到也可以在<code>Win+R</code>，然后输入<code>%userprofile%</code>回车即可</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark" style="--shiki-light:#24292e;--shiki-dark:#e1e4e8;--shiki-light-bg:#fff;--shiki-dark-bg:#24292e;" tabindex="0" dir="ltr"><code><span class="line"><span># Settings apply across all Linux distros running on WSL 2</span></span>
+<span class="line"><span>[wsl2]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 限制内存</span></span>
+<span class="line"><span>memory=4GB </span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 限制 CPU</span></span>
+<span class="line"><span>processors=2</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 设置交换区大小，默认可用内存的 25%</span></span>
+<span class="line"><span>swap=8GB</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># swapfile 文件路径, 默认 %USERPROFILE%\\AppData\\Local\\Temp\\swap.vhdx</span></span>
+<span class="line"><span>swapfile=C:\\\\temp\\\\wsl-swap.vhdx</span></span></code></pre></div>`,9)]])}var s=n(a,[[`render`,o]]);export{i as __pageData,s as default};
